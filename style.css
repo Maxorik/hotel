@@ -1,0 +1,73 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+header{
+    margin: 0 auto;
+    height:55px;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(31, 32, 65, 0.5);
+    padding-top: 15px;
+}
+
+.header_nav_elem.selected{
+    font-weight: bold;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.header_logo_img{
+    margin-left: 10%;
+    float: left;
+}
+
+.header_logo_text{
+    float:left;
+    height:40px;
+    margin:0;
+    line-height: 40px;
+    text-decoration: none;
+    color:#000;
+}
+
+.header_nav_list{
+    float: left;
+    margin-left: 26,5%;
+    height:40px;
+    margin:0;
+    line-height: 40px;
+}
+
+.header_nav_elem{
+    display: inline;
+    margin-right: 30px;
+}
+
+.header_button{
+    float:left;
+    height:40px;
+    margin:0;
+    line-height: 40px;
+}
+
+.login{
+    margin-right: 20px;
+}
+
+.header_button{
+    padding: 0 20px;
+    border:2px solid #BC9CFF;
+    border-radius: 22px;
+    color:#BC9CFF;
+    font-weight: bold;
+}
+
+.header_button.selected{
+    color:#fff;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    
+}
