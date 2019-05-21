@@ -2,27 +2,32 @@
 <html>
 <head>
   <title>hotel</title>
-    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='css/themify-icons.css'>
 </head>
 <body>
 <header>
     <a class='header_logo' href="#">
-        <img class='header_logo_img' src="img/logo.PNG" width='40px' height="40px">
+        <div class='header_logo_img'><img src="img/logo.PNG"></div>
         <div class='header_logo_text'>TOXIN</div>
     </a>
-    <nav>
+    
+    <nav class='header_nav'>
         <ul class='header_nav_list'>
-            <li class='header_nav_elem selected'>Home</li>
+            <li class='header_nav_elem'>Home</li>
             <li class='header_nav_elem'>About As</li>
-            <li class='header_nav_elem'>Services</li>
+            <li class='header_nav_elem'>Services<span class='ti-angle-down'></span></li>
             <li class='header_nav_elem'>Careers</li>
             <li class='header_nav_elem'>News</li>
             <li class='header_nav_elem'>Documentation</li>
         </ul>
     </nav>
-    <div class='header_button login'>LOGIN</div>
-    <div class='header_button selected register'>REGISTER</div>
     
+    <div class='header_buttons'>
+        <div class='header_button login'>LOGIN</div>
+        <div class='header_button register'>REGISTER</div>
+    </div>
+
     <div class='header username' style="display: none"></div>
 </header>
 </body>
