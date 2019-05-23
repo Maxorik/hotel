@@ -8,27 +8,48 @@
 <body>
 <header>
     <a class='header_logo' href="#">
-        <div class='header_logo_img'><img src="img/logo.PNG"></div>
-        <div class='header_logo_text'>TOXIN</div>
+        <div class='header_logo__img'><img src="img/logo.PNG"></div>
+        <div class='header_logo__text'>TOXIN</div>
     </a>
     
     <nav class='header_nav'>
-        <ul class='header_nav_list'>
-            <li class='header_nav_elem'>Home</li>
-            <li class='header_nav_elem'>About As</li>
-            <li class='header_nav_elem'>Services<span class='ti-angle-down'></span></li>
-            <li class='header_nav_elem'>Careers</li>
-            <li class='header_nav_elem'>News</li>
-            <li class='header_nav_elem'>Documentation</li>
+        <ul class='header_nav__list'>
+            <li class='header_nav__elem'>Home</li>
+            <li class='header_nav__elem'>About As</li>
+            <li class='header_nav__elem'>Services<span class='ti-angle-down'></span></li>
+            <li class='header_nav__elem'>Careers</li>
+            <li class='header_nav__elem'>News</li>
+            <li class='header_nav__elem'>Documentation</li>
         </ul>
     </nav>
     
     <div class='header_buttons'>
-        <div class='header_button login'>LOGIN</div>
-        <div class='header_button register'>REGISTER</div>
+        <div class='header_button'>LOGIN</div>
+        <div class='header_button'>REGISTER</div>
     </div>
 
-    <div class='header username' style="display: none"></div>
+    <div class='header_username' style="display: none"></div>
 </header>
+    
+<form class='reg_form'>
+    <p class='reg_form__h1'>Регистрация аккаунта</p>
+    <input type='text' class='reg_form__input' placeholder="Имя">
+    <input type='text' class='reg_form__input' placeholder="Фамилия">
+    
+    <p class='left reg_form__radio'><input type='radio' name='sex' checked class='reg_form__radio_purple'>Мужчина</p>
+    <p class='reg_form__radio'><input type='radio' name='sex' class='reg_form__radio_purple'>Женщина</p>
+    
+    <p class='reg_form__h2'>ДАТА РОЖДЕНИЯ</p>
+    <input type='text' class='reg_form__input' placeholder="ДД.ММ.ГГГГ">
+    <p class='reg_form__h2'>ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС</p>
+    <input type='text' class='reg_form__input' placeholder="E-mail">
+    <input type='password' class='reg_form__input' placeholder="Пароль">
+    <p class='reg_form__radio'><input type='radio' name='spec' checked class='reg_form__radio'>Получать спецпредложения</p>
+    <div class='header_button toprice_long'>Перейти к оплате</div>
+    <div class='reg_form__tologin'>
+        <p class='left'>Уже есть аккаунт на Toxin</p>
+        <div class='header_button toprice_short'>Войти</div>
+    </div>
+</form>
 </body>
 </html> 

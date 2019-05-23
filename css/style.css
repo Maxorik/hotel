@@ -15,13 +15,13 @@ header{
     padding-top: 15px;
 }
 
-.header_nav_elem:hover, .header_nav_elem:link{
+.header_nav__elem:hover, .header_nav__elem:link{
     font-weight: bold;
     color: rgba(31, 32, 65, 0.75);
     cursor: pointer;
 }
 
-.header_logo_img{
+.header_logo__img{
     margin-left: 10%;
     float: left;
     padding-right:30px;
@@ -29,7 +29,7 @@ header{
     height:auto;
 }
 
-.header_logo_text{
+.header_logo__text{
     float:left;
     height:40px;
     margin:0;
@@ -43,7 +43,7 @@ header{
     right:25%;
 }
 
-.header_nav_list{
+.header_nav__list{
     float: left;
     height:40px;
     margin:0;
@@ -51,16 +51,9 @@ header{
     margin-right: 30px;
 }
 
-.header_nav_elem{
+.header_nav__elem{
     display: inline;
     margin-right: 30px;
-}
-
-.header_button{
-    float:left;
-    height:40px;
-    margin:0;
-    line-height: 40px;
 }
 
 .ti-angle-down{
@@ -72,7 +65,12 @@ header{
 }
 
 .header_button{
+    float:left;
+    height:40px;
+    margin:0;
+    line-height: 40px;
     padding: 0 20px;
+    margin-left:20px;
     border:2px solid #BC9CFF;
     border-radius: 22px;
     color:#BC9CFF;
@@ -88,4 +86,77 @@ header{
 .header_buttons{
     float: right;
     margin-right:10%;
+}
+
+.reg_form{
+    width: 320px;
+    height: 586px;
+    margin:auto;
+    border: 1px solid black;
+    padding:30px;
+}
+
+.reg_form__h1{
+    margin:0;
+    padding:10px 0px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.reg_form__input{
+    width: 305px;
+    margin:auto;
+    margin-top: 10px;
+    padding:0 15px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.reg_form__input::placeholder{
+    margin-left:15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.left{
+    float: left;
+}
+
+.reg_form__radio{
+    margin-right:20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.reg_form__h2{
+    margin:0;
+    padding: 0;
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.toprice_long{
+    margin: 0 auto;
+    float:none;
+    max-width:80%;
+}
+
+.reg_form__tologin{
+    margin-top: 30px;
 }
