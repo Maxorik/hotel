@@ -41,15 +41,27 @@
     <input type='text' class='reg_form__input' placeholder="Имя">
     <input type='text' class='reg_form__input' placeholder="Фамилия">
     
-    <p class='left reg_form__radio'><input type='radio' name='sex' checked class='reg_form__radio_purple'>Мужчина</p>
-    <p class='reg_form__radio'><input type='radio' name='sex' class='reg_form__radio_purple'>Женщина</p>
-    
+    <label><input class="checkbox" type="radio" name="sex">
+        <span class="checkbox-custom"></span>
+        <span class="label">Мужчина</span>
+    </label>
+    <label><input class="checkbox" type="radio" name="sex">
+        <span class="checkbox-custom"></span>
+        <span class="label">Женщина</span>
+    </label>
     <p class='reg_form__h2'>ДАТА РОЖДЕНИЯ</p>
     <input type='text' class='reg_form__input' placeholder="ДД.ММ.ГГГГ">
     <p class='reg_form__h2'>ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС</p>
     <input type='text' class='reg_form__input' placeholder="E-mail">
     <input type='password' class='reg_form__input' placeholder="Пароль">
-    <p class='reg_form__radio'><input type='radio' name='spec' checked class='reg_form__radio'>Получать спецпредложения</p>
+    
+    <div class="button-spec r left" id="button-spec">
+        <input type="checkbox" class="android-checkbox">
+            <div class="knobs"></div>
+            <div class="layer"></div>
+    </div>
+    <span class="label l-spec">Получать спецпредложения</span>
+    
     <div class='header_button toprice_long'>Перейти к оплате</div>
     <div class='reg_form__tologin'>
         <p class='left'>Уже есть аккаунт на Toxin</p>
@@ -61,7 +73,7 @@
     <p class='reg_form__h1'>Войти</p>
     <input type='text' class='reg_form__input' placeholder="E-mail">
     <input type='password' class='reg_form__input' placeholder="Пароль">
-    <div class='header_button toprice_long marg'>Войти</div>
+    <div class='header_button toprice_long'>Войти</div>
     <div class='reg_form__tologin'>
         <p class='left'>Нет аккаунта на Toxin?</p>
         <div class='header_button toprice_short' onclick='showregform()'>Создать</div>
