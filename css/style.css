@@ -8,6 +8,8 @@ body{
 .main_part{
     background-color: darkgray;
     background-image: url(../img/image%204.1.jpg);
+    width:100%;
+    min-height:600px;
     padding:30px 0;
 }
 
@@ -21,7 +23,7 @@ header{
     padding-top: 15px;
 }
 
-.header_nav__elem:hover, .header_nav__elem:link{
+.header_nav__elem:hover, .footer_li:hover{
     font-weight: bold;
     color: rgba(31, 32, 65, 0.75);
     cursor: pointer;
@@ -44,8 +46,6 @@ header{
     text-decoration: none;
     color:#000;
 }
-
-
 
 .header_nav{
     display:inline-block;
@@ -101,9 +101,19 @@ header{
     cursor: pointer;
 }
 
-.reg_form{
+#reg_form{
+    display:none;
     width: 320px;
-    height: 586px;
+    min-height: 586px;
+    margin:auto;
+    padding:30px;
+    background-color: #FFFFFF;
+}
+
+#enter_form{
+    display:none;
+    width: 320px;
+    min-height: 300px;
     margin:auto;
     padding:30px;
     background-color: #FFFFFF;
@@ -161,9 +171,9 @@ header{
 }
 
 .toprice_long{
-    margin: 0 auto;
+    margin: auto;
     float:none;
-    max-width:80%;
+    max-width:77%;
 }
 
 .reg_form__tologin{
@@ -203,4 +213,41 @@ footer{
 
 .footer_part__text{
     color: rgba(31, 32, 65, 0.75);
+}
+
+.social {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background: #bdc3c7 url(../img/soc.PNG) no-repeat;
+  float:right;
+}
+
+.social-tw{
+    background-position: -5px 0;
+}
+
+.social-fb{
+    background-position: -42px 0;
+}
+
+.social-inst{
+    background-position: -80px 0;
+}
+
+.footer_mini{
+    padding:0 10%;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.pod{
+    overflow: auto;
+    width:100%;
+    height: 24px;
+}
+
+.marg{
+    margin-top: 20px;
 }
