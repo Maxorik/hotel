@@ -27,12 +27,13 @@
     </nav>
     
     <div class='header_buttons'>
-        <div class='header_button' onclick='showenterform()'>ВОЙТИ</div>
-        <div class='header_button' onclick='showregform()'>ЗАРЕГИСТРИРОВАТЬСЯ</div>
+        <div id='header_buttons'>
+            <div class='header_button' onclick='showenterform()'>ВОЙТИ</div>
+            <div class='header_button' onclick='showregform()'>ЗАРЕГИСТРИРОВАТЬСЯ</div>
+        </div>
+        <div id='header_username' style="display: none"></div>
     </div>
-
     </div>
-    <div class='header_username' style="display: none"></div>
 </header>
  
 <div class='main_part'>
@@ -41,7 +42,7 @@
     <input type='text' class='reg_form__input' placeholder="Имя">
     <input type='text' class='reg_form__input' placeholder="Фамилия">
     
-    <label><input class="checkbox" type="radio" name="sex">
+    <label><input class="checkbox" type="radio" name="sex" checked>
         <span class="checkbox-custom"></span>
         <span class="label">Мужчина</span>
     </label>
@@ -71,9 +72,9 @@
     
 <form id='enter_form'>
     <p class='reg_form__h1'>Войти</p>
-    <input type='text' class='reg_form__input' placeholder="E-mail">
-    <input type='password' class='reg_form__input' placeholder="Пароль">
-    <div class='header_button toprice_long'>Войти</div>
+    <input type='text' class='reg_form__input' placeholder="E-mail" id='email'>
+    <input type='password' class='reg_form__input' placeholder="Пароль" id='pass'>
+    <div class='header_button toprice_long' onclick="checktheform()">Войти</div>
     <div class='reg_form__tologin'>
         <p class='left'>Нет аккаунта на Toxin?</p>
         <div class='header_button toprice_short' onclick='showregform()'>Создать</div>

@@ -101,6 +101,7 @@ header{
     cursor: pointer;
 }
 
+
 #reg_form{
     display:none;
     width: 320px;
@@ -358,4 +359,17 @@ footer{
 .l-spec{
     margin-top: 15px;
     margin-left:10px;
+}
+
+.placeholder-alert::placeholder{
+    color:red;
+}
+
+
+#header_username{
+    min-width: 200px;
+    float: left;
+    height:40px;
+    margin:0;
+    line-height: 40px;
 }
