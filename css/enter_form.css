@@ -1,0 +1,32 @@
+#enter_form{
+    display:none;
+    width: 320px;
+    min-height: 300px;
+    margin:auto;
+    padding:30px;
+    background-color: #FFFFFF;
+}
+
+.reg_form__h1{
+    margin:0;
+    padding:10px 0px;
+}
+
+.toprice_long{
+    margin: auto;
+    margin-top: 20px;
+    float:none;
+    max-width:77%;
+}
+
+.reg_form__input{
+    width: 305px;
+    margin:auto;
+    margin-top: 10px;
+    padding:0 15px;
+    height: 44px;
+}
+
+.reg_form__tologin{
+    margin-top: 30px;
+}

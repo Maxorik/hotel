@@ -2,8 +2,19 @@
 <html>
 <head>
   <title>hotel</title>
-    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='css/main.css'>
     <link rel='stylesheet' href='css/themify-icons.css'>
+    <link rel='stylesheet' href='css/header.css'>
+    <link rel='stylesheet' href='css/buttons.css'>
+    <link rel='stylesheet' href='css/nav_elem.css'>
+    <link rel='stylesheet' href='css/reg_form.css'>
+    <link rel='stylesheet' href='css/inputs.css'>
+    <link rel='stylesheet' href='css/android_checkbox.css'>
+    <link rel='stylesheet' href='css/checkbox.css'>
+    <link rel='stylesheet' href='css/footer.css'>
+    <link rel='stylesheet' href='css/enter_form.css'>
+    <link rel='stylesheet' href='css/h.css'>
+     <link rel='stylesheet' href='css/social_icons.css'>
     <script src="scripts.js"></script>
 </head>
 <body>
@@ -17,19 +28,19 @@
     <div class='header_rightpart'>
     <nav class='header_nav'>
         <ul class='header_nav__list'>
-            <li class='header_nav__elem'>Home</li>
-            <li class='header_nav__elem'>О нас</li>
-            <li class='header_nav__elem'>Услуги<span class='ti-angle-down'></span></li>
-            <li class='header_nav__elem'>Вакансии</li>
-            <li class='header_nav__elem'>Новости</li>
-            <li class='header_nav__elem'>Соглашения</li>
+            <li class='nav__elem'>Home</li>
+            <li class='nav__elem'>О нас</li>
+            <li class='nav__elem'>Услуги<span class='ti-angle-down'></span></li>
+            <li class='nav__elem'>Вакансии</li>
+            <li class='nav__elem'>Новости</li>
+            <li class='nav__elem'>Соглашения</li>
         </ul>
     </nav>
     
     <div class='header_buttons'>
         <div id='header_buttons'>
-            <div class='header_button' onclick='showenterform()'>ВОЙТИ</div>
-            <div class='header_button' onclick='showregform()'>ЗАРЕГИСТРИРОВАТЬСЯ</div>
+            <div class='main_button' onclick='showenterform()'>ВОЙТИ</div>
+            <div class='main_button' onclick='showregform()'>ЗАРЕГИСТРИРОВАТЬСЯ</div>
         </div>
         <div id='header_username' style="display: none"></div>
     </div>
@@ -63,10 +74,10 @@
     </div>
     <span class="label l-spec">Получать спецпредложения</span>
     
-    <div class='header_button toprice_long'>Перейти к оплате</div>
+    <div class='main_button toprice_long'>Перейти к оплате</div>
     <div class='reg_form__tologin'>
         <p class='left'>Уже есть аккаунт на Toxin</p>
-        <div class='header_button toprice_short' onclick='showenterform()'>Войти</div>
+        <div class='main_button toprice_short' onclick='showenterform()'>Войти</div>
     </div>
 </form>
     
@@ -74,10 +85,10 @@
     <p class='reg_form__h1'>Войти</p>
     <input type='text' class='reg_form__input' placeholder="E-mail" id='email'>
     <input type='password' class='reg_form__input' placeholder="Пароль" id='pass'>
-    <div class='header_button toprice_long' onclick="checktheform()">Войти</div>
+    <div class='main_button toprice_long' onclick="checktheform()">Войти</div>
     <div class='reg_form__tologin'>
         <p class='left'>Нет аккаунта на Toxin?</p>
-        <div class='header_button toprice_short' onclick='showregform()'>Создать</div>
+        <div class='main_button toprice_short' onclick='showregform()'>Создать</div>
     </div>
     
     
