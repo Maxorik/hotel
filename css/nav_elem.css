@@ -1,5 +1,13 @@
+.nav__elem, .footer_li, .nav__elem:link, .footer_li:link{
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(31, 32, 65, 0.5);
+    cursor: pointer;
+}
+
 .nav__elem:hover, .footer_li:hover{
     font-weight: bold;
     color: rgba(31, 32, 65, 0.75);
     cursor: pointer;
 }
+

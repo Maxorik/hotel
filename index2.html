@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>hotel</title>
+  <title>page2</title>
     <link rel='stylesheet' href='css/main.css'>
     <link rel='stylesheet' href='css/themify-icons.css'>
     <link rel='stylesheet' href='css/header.css'>
@@ -13,6 +13,7 @@
     <link rel='stylesheet' href='css/checkbox.css'>
     <link rel='stylesheet' href='css/footer.css'>
     <link rel='stylesheet' href='css/enter_form.css'>
+     <link rel='stylesheet' href='css/date_form.css'>
     <link rel='stylesheet' href='css/h.css'>
      <link rel='stylesheet' href='css/social_icons.css'>
     <script src="scripts.js"></script>
@@ -28,7 +29,7 @@
     <div class='header_rightpart'>
     <nav class='header_nav'>
         <ul class='header_nav__list'>
-            <a href="index2.html"><li class='nav__elem'>Home</li></a>
+           <a href="index2.html"><li class='nav__elem'>Home</li></a>
             <a href="index.html"><li class='nav__elem'>О нас</li></a>
             <li class='nav__elem'>Услуги<span class='ti-angle-down'></span></li>
             <li class='nav__elem'>Вакансии</li>
@@ -47,52 +48,25 @@
     </div>
 </header>
  
-<div class='main_part' style='background-image: url(img/image1.jpg)'>
-<form id='reg_form'>
-    <p class='reg_form__h1'>Регистрация аккаунта</p>
-    <input type='text' class='reg_form__input' placeholder="Имя">
-    <input type='text' class='reg_form__input' placeholder="Фамилия">
+<div class='main_part' style='background-image: url(img/image3.jpg)'>
     
-    <label><input class="checkbox" type="radio" name="sex" checked>
-        <span class="checkbox-custom"></span>
-        <span class="label">Мужчина</span>
-    </label>
-    <label><input class="checkbox" type="radio" name="sex">
-        <span class="checkbox-custom"></span>
-        <span class="label">Женщина</span>
-    </label>
-    <p class='reg_form__h2'>ДАТА РОЖДЕНИЯ</p>
-    <input type='text' class='reg_form__input' placeholder="ДД.ММ.ГГГГ">
-    <p class='reg_form__h2'>ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС</p>
-    <input type='text' class='reg_form__input' placeholder="E-mail">
-    <input type='password' class='reg_form__input' placeholder="Пароль">
-    
-    <div class="button-spec r left" id="button-spec">
-        <input type="checkbox" class="android-checkbox">
-            <div class="knobs"></div>
-            <div class="layer"></div>
+<form id='date_form'>
+    <p class='reg_form__h1'>Найдём номера под ваши пожелания</p>
+    <div class='left'>
+        <p class='reg_form__h2'>ПРИБЫТИЕ<span class='ti-angle-down'></span></p>
+        <input type='text' class='reg_form__input mini' placeholder="ДД.ММ.ГГГГ">
     </div>
-    <span class="label l-spec">Получать спецпредложения</span>
-    
-    <div class='main_button toprice_long'>Перейти к оплате</div>
-    <div class='reg_form__tologin'>
-        <p class='left'>Уже есть аккаунт на Toxin</p>
-        <div class='main_button toprice_short' onclick='showenterform()'>Войти</div>
+    <div>
+        <p class='reg_form__h2'>ВЫЕЗД<span class='ti-angle-down'></span></p>
+        <input type='text' class='reg_form__input mini' placeholder="ДД.ММ.ГГГГ">
     </div>
+    
+    <p class='reg_form__h2'>ГОСТИ</p>
+        <input type='text' class='reg_form__input' placeholder="Сколько гостей">
+    
+    <div class='main_button toprice_long'>ПОДОБРАТЬ НОМЕР<span class='ti-arrow-right'></span></div>
 </form>
     
-<form id='enter_form'>
-    <p class='reg_form__h1'>Войти</p>
-    <input type='text' class='reg_form__input' placeholder="E-mail" id='email'>
-    <input type='password' class='reg_form__input' placeholder="Пароль" id='pass'>
-    <div class='main_button toprice_long' onclick="checktheform()">Войти</div>
-    <div class='reg_form__tologin'>
-        <p class='left'>Нет аккаунта на Toxin?</p>
-        <div class='main_button toprice_short' onclick='showregform()'>Создать</div>
-    </div>
-    
-    
-</form>
 </div>
     
 <footer>
