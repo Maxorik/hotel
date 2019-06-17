@@ -1,0 +1,64 @@
+doctype html
+html
+    head
+        meta(charset = 'utf-8')
+        title webpack with pug
+        style 
+            include ../css/inputs.css
+            include ../css/dropdown_list.css
+            include ../css/font-awesome.min.css
+    
+    body
+        div(class='theblock')
+            div(class='bold_label') Text field
+            input(class='input big' placeholder='Email')
+            
+        div(class='theblock')
+            div(class='bold_label') Dropdown
+            input(class='input big' placeholder='Сколько гостей')
+            span(class='abs fa fa-chevron-down')
+            
+        div(class='theblock')
+            div(class='bold_label') masked text field
+            input(class='input big' placeholder='ДД.ММ.ГГГГ')
+            
+        div(class='theblock')
+            div(class='bold_label') date Dropdown
+            input(class='input small' placeholder='ДД.ММ.ГГГГ')
+            span(class='abs fa fa-chevron-down left')
+            
+            input(class='input small' placeholder='17.06.2019')
+            span(class='abs fa fa-chevron-down')
+        
+        div(class='theblock')
+            div(class='bold_label') Dropdown
+            input(class='input big' placeholder='Спальни, Кровати, Ванные комнаты')
+            span(class='abs fa fa-chevron-down')
+            
+            div(class='dropdown')
+                div(class='dropdown_part')
+                    span(class='bold_label') СПАЛЬНИ
+                    div(class='dropdown_part_right')
+                        div(class='circle')
+                            span(class='minus_count') -
+                        span(class='bold_label c') 0
+                        div(class='circle')
+                            span(class='plus_count') +
+                            
+                div(class='dropdown_part')
+                    span(class='bold_label') КРОВАТИ
+                    div(class='dropdown_part_right')
+                        div(class='circle')
+                            span(class='minus_count') -
+                        span(class='bold_label c') 0
+                        div(class='circle')
+                            span(class='plus_count') +
+                            
+                div(class='dropdown_part')
+                    span(class='bold_label') ВАННЫЕ КОМНАТЫ
+                    div(class='dropdown_part_right')
+                        div(class='circle')
+                            span(class='minus_count') -
+                        span(class='bold_label c') 0
+                        div(class='circle')
+                            span(class='plus_count') +

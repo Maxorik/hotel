@@ -5,6 +5,10 @@ html
         title webpack with pug
         style 
             include ../css/font-awesome.min.css
+            include ../css/main.css
     
     body
-        include allcomponents.pug
+        include header.pug
+        div(class='left')
+            include samples_inputs.pug
+        include samples_checkboxes.pug

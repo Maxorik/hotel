@@ -17,10 +17,17 @@ body {
 .left {
   float: left; }
 
-.theblock{
-    margin:20px;
+.bold_label{
+    font-family: Montserrat;
+    font-weight: bolder;
+    font-size: 12px;
+    line-height: 15px;
+    color: #1F2041;;
+    text-transform: uppercase;
+    max-width: 320px;
+    margin:0px;
 }
 
-.left{
-    float:left;
+.flex{
+    display: flex;
 }

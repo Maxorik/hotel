@@ -1,4 +1,4 @@
-.reg_form__input{
+.input{
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 4px;
@@ -6,12 +6,12 @@
     color: rgba(31, 32, 65, 0.25);
 }
 
-.reg_form__input:hover, .reg_form__input:focus{
+.input:hover, .input:focus{
     border: 1px solid rgba(31, 32, 65, 0.5);
     color: rgba(31, 32, 65, 0.5);
 }
 
-.reg_form__input::placeholder{
+.input::placeholder{
     color: rgba(31, 32, 65, 0.25);
     margin-left:15px;
     font-style: normal;
@@ -21,6 +21,10 @@
 
 .placeholder-alert::placeholder{
     color:red;
+}
+
+.theblock{
+    margin:20px;
 }
 
 .abs{
@@ -50,3 +54,9 @@
 .small+.abs{
     margin-left: -45px;
 }
+
+/*
+div(class='theblock')
+input(class='input big' placeholder='Спальни, Кровати, Ванные комнаты')
+span(class='abs fa fa-chevron-down')
+*/

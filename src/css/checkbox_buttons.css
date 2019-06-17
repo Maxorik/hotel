@@ -1,0 +1,66 @@
+.checkbox-square {
+    position: absolute;
+    left: -9999px;
+}
+
+.checkbox-square + label{
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.checkbox-square + label:before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+.checkbox-square + label:after{
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    left: 4px;
+    top: 5px;
+    width: 9px;
+    height: 7px;
+    border-radius: 1px;
+    border-left: 3px solid #8BA4F9;
+    border-bottom: 3px solid #8BA4F9;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+        
+.checkbox-square:not(:checked) + label:after{
+    opacity: 0;
+}
+
+.checkbox-square:checked + label:after{
+    opacity: 1;
+}
+
+.checkbox-square + label{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color:rgba(31, 32, 65, 0.5);
+}
+
+/*
+        label(class='flex')
+                    input(class="checkbox-square" type="checkbox" id='cs1')
+                    label(for='cs1') Можно курить
+*/

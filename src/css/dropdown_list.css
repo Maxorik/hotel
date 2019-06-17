@@ -9,20 +9,13 @@
 .dropdown_part{
     display: flex;
     justify-content: space-between;
+    padding-left:15px;
+    padding-top:15px;
 }
 
 .dropdown_part_right{
     display: flex;
     margin-right: 7px;
-}
-
-.bold_label{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    color: #1F2041;
-    margin:15px;
 }
 
 .circle{
@@ -31,14 +24,28 @@
     height:30px;
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius:100%;
-    margin-top: 8px;
     justify-content: center;
-    padding-top: 2px;
+    margin: 8px;
+    margin-top: -8px;
+    padding-top: 5px;
     cursor: pointer;
 }
 
 .circle:hover{
-    background-color: #BC9CFF;
+    background-color: #8BA4F9;
     color:white;
     border-color: white;
 }
+
+
+/*
+div(class='dropdown')
+    div(class='dropdown_part')
+        span(class='bold_label') СПАЛЬНИ
+        div(class='dropdown_part_right')
+           div(class='circle')
+               span(class='minus_count') -
+           span(class='bold_label c') 0
+           div(class='circle')
+               span(class='plus_count') +
+*/
