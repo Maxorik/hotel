@@ -1,50 +1,33 @@
 header{
     margin: 0 auto;
-    height:55px;
-    text-align: center;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items:center; 
     font-style: normal;
     font-weight: normal;
     color: rgba(31, 32, 65, 0.5);
-    padding-top: 15px;
-}
-
-.thelogo__img{
-    margin-left: 10%;
-    float: left;
-    padding-right:30px;
-    padding-right:30px;
-    width:40px;
-    height:auto;
-}
-
-.thelogo__text{
-    float:left;
-    height:40px;
-    margin:0;
-    line-height: 40px;
-    text-decoration: none;
-    color:#000;
-}
-
-.header_nav{
-    display:inline-block;
-    vertical-align: middle;
+    padding:18px;
 }
 
 .header_buttons{
-    display:inline-block;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.main_button{
+    float:left;
+    margin-right:20px;
 }
 
 .header_nav__list{
-    float: left;
     height:40px;
     margin:0;
-    line-height: 40px;
 }
 
 .nav__elem{
-    display: inline;
     margin-right: 30px;
 }
 
@@ -52,22 +35,9 @@ header{
     margin-left:5px;
 }
 
-.header_rightpart{
-    float: right;
-    margin-right:10%;
-}
-
-.main_button{
-    float:left;
-    height:40px;
-    margin:0;
-    line-height: 40px;
-    padding: 0 20px;
-    margin-left:20px;
-}
-
 
 #header_username{
+    display: none;
     min-width: 200px;
     float: left;
     height:40px;

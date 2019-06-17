@@ -37,9 +37,14 @@ module.exports = {
             test: /\.(png|jpg|svg|gif)$/,
             loader: 'file-loader',
             options: {
-                pretty: true
+                pretty: true,
+                name: '[name].[ext]'
             }
         },{
+            test: /\.(woff|woff2|ttf|eof)$/,
+            use: ['file-loader', 'file-loader?name=fonts/[name].[ext]']
+        },
+            {
             test: /\.css$/,
             use: [
                 'style-loader',
@@ -87,8 +92,7 @@ module.exports = {
         
         new HtmlWebpackPlugin({
             hash: false,
-            template: `${PATHS.src}/index.pug`,
-            //filename: './index.pug'
+            template: `${PATHS.src}/pug/index.pug`,
         }),
         
         new CopyWebpackPlugin([

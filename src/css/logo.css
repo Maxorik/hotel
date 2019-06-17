@@ -1,0 +1,18 @@
+.thelogo{
+    display: flex;
+}
+
+.thelogo__img{
+    padding-right:30px;
+    padding-right:30px;
+    width:40px;
+    height:auto;
+}
+
+.thelogo__text{
+    height:40px;
+    margin:0;
+    line-height: 40px;
+    text-decoration: none;
+    color:#000;
+}
