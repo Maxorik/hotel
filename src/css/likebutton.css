@@ -1,0 +1,34 @@
+.button-like{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 50%;
+    width: 40px;
+    height: 20px;
+    overflow: hidden;
+    border:1px solid rgba(31, 32, 65, 0.25);
+    margin-top: 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 10px;
+    color: rgba(31, 32, 65, 0.25);
+    padding: 3px;
+}
+
+.fa-heart-o, .fa-heart{
+    margin-top: 1px;
+}
+
+.button-like:hover, .button-like:hover + span{
+    border:1px solid rgba(31, 32, 65, 0.5);
+    color:#BC9CFF;
+}
+
+/*
+div(class='theblock')
+            label(class='bold_label') like button
+            div(class='flex')
+                div(class="button-like" id='likeit')
+                    span(class='fa fa-heart-o')
+                    span 11  
+*/

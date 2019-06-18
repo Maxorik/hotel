@@ -9,7 +9,8 @@ html
             include ../css/font-awesome.min.css
             include ../css/radio.css
             include ../css/toggle.css
-    
+            include ../css/likebutton.css 
+            include ../css/ratebutton.css
     body                     
         div(class='theblock')
             label(class='bold_label') checkbox buttons
@@ -46,3 +47,20 @@ html
                     div(class="knobs")
                     div(class="layer")
                 span(class='toggle__label') Получать спецпредложения
+                
+        div(class='theblock')
+            label(class='bold_label') like button
+            div(class='flex')
+                div(class="button-like" id='likeit')
+                    span(class='fa fa-heart-o')
+                    span 11       
+                    
+        div(class='theblock')
+            label(class='bold_label') rate button
+            div(class='flex' id='stars')
+                span(class='fa fa-star-o')
+                span(class='fa fa-star-o')
+                span(class='fa fa-star-o')
+                span(class='fa fa-star-o')
+                span(class='fa fa-star-o')
+                span(class='fa fa-star' style='display:none')

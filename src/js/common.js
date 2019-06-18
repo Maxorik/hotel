@@ -1,2 +1,4 @@
-let sum=(a,b) => a+b;
-console.log(sum(4,90));
+function like(){
+    alert('hello');
+    //alert(this.style.color); 
+}

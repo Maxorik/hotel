@@ -71,3 +71,14 @@
     color:rgba(31, 32, 65, 0.75);
     margin: 10px;
 }
+
+/*
+div(class='theblock')
+            label(class='bold_label') toggle
+            div(class='flex')
+                div(class="button-spec r" id="button-spec")
+                    input(type="checkbox" class="toggle")
+                    div(class="knobs")
+                    div(class="layer")
+                span(class='toggle__label') Получать спецпредложения
+*/
