@@ -32,33 +32,39 @@ html
         
         div(class='theblock')
             div(class='bold_label') Dropdown
-            input(class='input big' placeholder='Спальни, Кровати, Ванные комнаты')
-            span(class='abs fa fa-chevron-down')
+            div(id='drop_button')
+                input(class='input big drop_button' placeholder='Спальни, Кровати, Ванные комнаты')
+                span(class='abs fa fa-chevron-down')
             
-            div(class='dropdown')
+            div(class='dropdown' id='dropdown')
                 div(class='dropdown_part')
                     span(class='bold_label') СПАЛЬНИ
                     div(class='dropdown_part_right')
-                        div(class='circle')
+                        div(class='circle minus')
                             span(class='minus_count') -
                         span(class='bold_label c') 0
-                        div(class='circle')
+                        div(class='circle plus')
                             span(class='plus_count') +
                             
                 div(class='dropdown_part')
                     span(class='bold_label') КРОВАТИ
                     div(class='dropdown_part_right')
-                        div(class='circle')
+                        div(class='circle minus')
                             span(class='minus_count') -
                         span(class='bold_label c') 0
-                        div(class='circle')
+                        div(class='circle plus')
                             span(class='plus_count') +
                             
                 div(class='dropdown_part')
                     span(class='bold_label') ВАННЫЕ КОМНАТЫ
                     div(class='dropdown_part_right')
-                        div(class='circle')
+                        div(class='circle minus')
                             span(class='minus_count') -
                         span(class='bold_label c') 0
-                        div(class='circle')
+                        div(class='circle plus')
                             span(class='plus_count') +
+                            
+                div(class='dropdown__buttons dropdown_part')
+                    div
+                        span(class='bold_label__gray' id='clean_button') очистить
+                    span(class='bold_label__gray' id='confirm_button') применить

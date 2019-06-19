@@ -13,6 +13,11 @@
     padding-top:15px;
 }
 
+.dropdown__buttons{
+    padding-right:15px;
+    padding-bottom: 13px;
+}
+
 .dropdown_part_right{
     display: flex;
     margin-right: 7px;
@@ -36,6 +41,11 @@
     color:white;
     border-color: white;
 }
+
+.drop_button{
+    cursor: pointer;
+}
+
 
 
 /*

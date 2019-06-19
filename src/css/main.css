@@ -17,7 +17,7 @@ body {
 .left {
   float: left; }
 
-.bold_label{
+.bold_label, .bold_label__gray{
     font-family: Montserrat;
     font-weight: bolder;
     font-size: 12px;
@@ -26,6 +26,15 @@ body {
     text-transform: uppercase;
     max-width: 320px;
     margin:0px;
+}
+
+.bold_label__gray{
+    color:rgba(31, 32, 65, 0.25);
+    cursor: pointer;
+}
+
+.bold_label__gray:hover{
+    color:#BC9CFF;
 }
 
 .flex{
