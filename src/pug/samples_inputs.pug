@@ -14,6 +14,10 @@ html
             input(class='input big' placeholder='Email')
             
         div(class='theblock')
+            div(class='bold_label') заглушка
+            input(class='input big' placeholder='заглушка')
+            
+        div(class='theblock')
             div(class='bold_label') Dropdown
             input(class='input big' placeholder='Сколько гостей')
             span(class='abs fa fa-chevron-down')
@@ -32,11 +36,11 @@ html
         
         div(class='theblock')
             div(class='bold_label') Dropdown
-            div(id='drop_button')
+            div(class='drop_for_script')
                 input(class='input big drop_button' placeholder='Спальни, Кровати, Ванные комнаты')
                 span(class='abs fa fa-chevron-down')
             
-            div(class='dropdown' id='dropdown')
+            div(class='dropdown' hidden)
                 div(class='dropdown_part')
                     span(class='bold_label') СПАЛЬНИ
                     div(class='dropdown_part_right')
@@ -66,5 +70,48 @@ html
                             
                 div(class='dropdown__buttons dropdown_part')
                     div
-                        span(class='bold_label__gray' id='clean_button') очистить
-                    span(class='bold_label__gray' id='confirm_button') применить
+                        span(class='bold_label__gray' hidden) очистить
+                    span(class='bold_label__gray' hidden) применить
+            
+            div(class='theblock')
+            div(class='bold_label') Dropdown
+            div(class='drop_for_script')
+                input(class='input big drop_button' placeholder='Количество гостей')
+                span(class='abs fa fa-chevron-down')
+            
+            div(class='dropdown' hidden)
+                div(class='dropdown_part')
+                    span(class='bold_label') ВЗРОСЛЫЕ
+                    div(class='dropdown_part_right')
+                        div(class='circle minus')
+                            span(class='minus_count') -
+                        span(class='bold_label c') 0
+                        div(class='circle plus')
+                            span(class='plus_count') +
+                            
+                div(class='dropdown_part')
+                    span(class='bold_label') ДЕТИ
+                    div(class='dropdown_part_right')
+                        div(class='circle minus')
+                            span(class='minus_count') -
+                        span(class='bold_label c') 0
+                        div(class='circle plus')
+                            span(class='plus_count') +
+                            
+                div(class='dropdown_part')
+                    span(class='bold_label') МЛАДЕНЦЫ
+                    div(class='dropdown_part_right')
+                        div(class='circle minus')
+                            span(class='minus_count') -
+                        span(class='bold_label c') 0
+                        div(class='circle plus')
+                            span(class='plus_count') +
+                            
+                div(class='dropdown__buttons dropdown_part')
+                    div
+                        span(class='bold_label__gray' hidden) очистить
+                    span(class='bold_label__gray' hidden) применить
+
+        
+    
+                    
