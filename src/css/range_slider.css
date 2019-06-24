@@ -1,0 +1,50 @@
+.range_label{
+    display: flex;
+    width:270px;
+    justify-content: space-between;
+}
+
+.range_price{
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(31, 32, 65, 0.5);
+    text-transform: uppercase;
+}
+
+.range_strip{
+    width:270px;
+    height:6px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 30px;
+    margin-top: 25px;
+}
+
+.range_metrik_circle{
+    position: absolute;
+    width:12px;
+    height:12px;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+
+.range_metrik_line{
+    position: absolute;
+    width:88px;
+    height:6px;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border: 2px solid #FFFFFF;
+    border-radius: 3px;
+    margin-top: -6px;
+    margin-left: 87px;
+}
+
+.range_start{
+    margin-left: 77px;
+}
+
+.range_end{
+    margin-left: 162px;
+}

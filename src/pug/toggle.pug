@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        meta(charset = 'utf-8')
+        title webpack with pug
+        style
+            include ../css/toggle.css
+    body
+        div(class='theblock')
+            label(class='bold_label') toggle
+            div(class='flex')
+                div(class="button-spec r" id="button-spec")
+                    input(type="checkbox" class="toggle")
+                    div(class="knobs")
+                    div(class="layer")
+                span(class='toggle__label') Получать спецпредложения

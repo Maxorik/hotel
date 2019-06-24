@@ -5,22 +5,12 @@ html
         title webpack with pug
         style 
             include ../css/inputs.css
-            include ../css/dropdown_list.css
             include ../css/font-awesome.min.css
     
     body
         div(class='theblock')
             div(class='bold_label') Text field
             input(class='input big' placeholder='Email')
-            
-        div(class='theblock')
-            div(class='bold_label') заглушка
-            input(class='input big' placeholder='заглушка')
-            
-        div(class='theblock')
-            div(class='bold_label') Dropdown
-            input(class='input big' placeholder='Сколько гостей')
-            span(class='abs fa fa-chevron-down')
             
         div(class='theblock')
             div(class='bold_label') masked text field
@@ -31,87 +21,11 @@ html
             input(class='input small' placeholder='ДД.ММ.ГГГГ')
             span(class='abs fa fa-chevron-down left')
             
-            input(class='input small' placeholder='17.06.2019')
+            input(class='input small' value='17.06.2019')
             span(class='abs fa fa-chevron-down')
-        
-        div(class='theblock')
-            div(class='bold_label') Dropdown
-            div(class='drop_for_script')
-                input(class='input big drop_button' placeholder='Спальни, Кровати, Ванные комнаты')
-                span(class='abs fa fa-chevron-down')
-            
-            div(class='dropdown' hidden)
-                div(class='dropdown_part')
-                    span(class='bold_label') СПАЛЬНИ
-                    div(class='dropdown_part_right')
-                        div(class='circle minus')
-                            span(class='minus_count') -
-                        span(class='bold_label c') 0
-                        div(class='circle plus')
-                            span(class='plus_count') +
-                            
-                div(class='dropdown_part')
-                    span(class='bold_label') КРОВАТИ
-                    div(class='dropdown_part_right')
-                        div(class='circle minus')
-                            span(class='minus_count') -
-                        span(class='bold_label c') 0
-                        div(class='circle plus')
-                            span(class='plus_count') +
-                            
-                div(class='dropdown_part')
-                    span(class='bold_label') ВАННЫЕ КОМНАТЫ
-                    div(class='dropdown_part_right')
-                        div(class='circle minus')
-                            span(class='minus_count') -
-                        span(class='bold_label c') 0
-                        div(class='circle plus')
-                            span(class='plus_count') +
-                            
-                div(class='dropdown__buttons dropdown_part')
-                    div
-                        span(class='bold_label__gray' hidden) очистить
-                    span(class='bold_label__gray' hidden) применить
-            
-            div(class='theblock')
-            div(class='bold_label') Dropdown
-            div(class='drop_for_script')
-                input(class='input big drop_button' placeholder='Количество гостей')
-                span(class='abs fa fa-chevron-down')
-            
-            div(class='dropdown' hidden)
-                div(class='dropdown_part')
-                    span(class='bold_label') ВЗРОСЛЫЕ
-                    div(class='dropdown_part_right')
-                        div(class='circle minus')
-                            span(class='minus_count') -
-                        span(class='bold_label c') 0
-                        div(class='circle plus')
-                            span(class='plus_count') +
-                            
-                div(class='dropdown_part')
-                    span(class='bold_label') ДЕТИ
-                    div(class='dropdown_part_right')
-                        div(class='circle minus')
-                            span(class='minus_count') -
-                        span(class='bold_label c') 0
-                        div(class='circle plus')
-                            span(class='plus_count') +
-                            
-                div(class='dropdown_part')
-                    span(class='bold_label') МЛАДЕНЦЫ
-                    div(class='dropdown_part_right')
-                        div(class='circle minus')
-                            span(class='minus_count') -
-                        span(class='bold_label c') 0
-                        div(class='circle plus')
-                            span(class='plus_count') +
-                            
-                div(class='dropdown__buttons dropdown_part')
-                    div
-                        span(class='bold_label__gray' hidden) очистить
-                    span(class='bold_label__gray' hidden) применить
-
+    
+        include dropdown_rooms.pug
+        include dropdown_guests.pug
         
     
                     

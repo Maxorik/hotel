@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        meta(charset = 'utf-8')
+        title webpack with pug
+        style 
+            include ../css/font-awesome.min.css 
+            include ../css/ratebutton.css
+    body                     
+        div(class='theblock')
+            label(class='bold_label') rate button
+            div(class='flex stars' id='stars')
+                span(class='fa fa-star-o')
+                span(class='fa fa-star-o')
+                span(class='fa fa-star-o')
+                span(class='fa fa-star-o')
+                span(class='fa fa-star-o')
+                span(class='fa fa-star' style='display:none')

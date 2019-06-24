@@ -8,11 +8,13 @@
 	height: 20px;            
 	border: 1px solid rgba(31, 32, 65, 0.25);
 	border-radius: 100%;
+    margin-right: 10px;
+    cursor:pointer;
 }
 
 .checkbox-circle__label{
     margin-right:20px;
-    color: rgba(31, 32, 65, 0.75);
+    color: rgba(31, 32, 65, 0.5);
 }
 
 .checkbox-circle__checkbox-custom,
@@ -30,8 +32,12 @@
 	right: 2px;
 	bottom: 2px;
 	left: 2px;
-	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);    
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	border-radius: 100%;
+}
+
+.checkbox-circle:checked + .checkbox-circle__checkbox-custom + .checkbox-circle__label{
+    color: rgba(31, 32, 65, 0.75);
 }
 
 /*

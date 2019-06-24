@@ -9,6 +9,7 @@
     padding-left: 28px;
     line-height: 20px;
     cursor: pointer;
+    font-family: Montserrat;
 }
 .checkbox-square + label:before{
     content: "";
@@ -58,6 +59,9 @@
     font-size: 14px;
     color:rgba(31, 32, 65, 0.5);
 }
+
+
+
 
 /*
         label(class='flex')
