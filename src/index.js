@@ -1,7 +1,5 @@
-//import "./js/ratestars"
-//import "./js/like.js"
-//import "./js/dropdown_count.js"
-import "./js/exp_drop"
+require('./js/ratestars');
+import './js/like';
 
-import "./css/main.css"
-import "./scss/main.scss"
+import "./css/main.css";
+import "./scss/main.scss";

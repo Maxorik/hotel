@@ -28,6 +28,7 @@
     border: 2px solid #FFFFFF;
     border-radius: 10px;
     margin-top: -10px;
+    cursor: pointer;
 }
 
 .range_metrik_line{
