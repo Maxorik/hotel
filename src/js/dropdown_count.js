@@ -1,6 +1,4 @@
-window.onload = function(){ 
-    
-    var dropdowns = document.getElementsByClassName('drop_for_script');
+var dropdowns = document.getElementsByClassName('drop_for_script');
     
     for(var i=0; i<dropdowns.length; i++){
         dropdowns[i].addEventListener('click', dropdownlist, false);
@@ -91,4 +89,3 @@ window.onload = function(){
         }
         
     }
-};

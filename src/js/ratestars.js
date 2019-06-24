@@ -1,6 +1,4 @@
-window.onload = function(){ 
-    
-    var stars = document.getElementById('stars');
+var stars = document.getElementById('stars');
     stars.onclick = function (event){
         var target = event.target;
         
@@ -26,5 +24,3 @@ window.onload = function(){
         }
         
     }
-    
-};

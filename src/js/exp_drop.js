@@ -1,6 +1,4 @@
-window.onload = function(){ 
-    
-    var checklist_arrows = document.getElementsByClassName('checklist_arrow');
+var checklist_arrows = document.getElementsByClassName('checklist_arrow');
     
     for(var i=0; i<checklist_arrows.length; i++){
         checklist_arrows[i].addEventListener('click', dropexp, false);
@@ -21,5 +19,3 @@ window.onload = function(){
             target.classList.add('fa-chevron-down')
         }
     }
-    
-};

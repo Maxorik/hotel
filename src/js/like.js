@@ -1,5 +1,3 @@
-window.onload = function(){ 
-    
     var likeit = document.getElementById('likeit');
     likeit.onclick = function like(){
         var like_count = +likeit.lastElementChild.textContent;
@@ -21,5 +19,3 @@ window.onload = function(){
             likeit.lastElementChild.textContent = like_count;
         }
     }
-    
-};
