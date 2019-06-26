@@ -1,0 +1,71 @@
+doctype html
+html
+    head
+        meta(charset = 'utf-8')
+        style 
+            include ../css/calendar.css
+    
+    body
+        div(class='theblock')
+            div(class='bold_label') calendar
+            span(class='fa fa-chevron-down calendar_drop')
+        div(class='calendar_list' hidden)
+            div(class='calendar_header')
+                div(class='calendar_arrow arrow_back')
+                    include ../img/arrow_back.svg
+                div(class='calendar_mounth')
+                div(class='calendar_arrow arrow_forward')
+                    include ../img/arrow_forward_f.svg
+            div(class='calendar_body')
+                table
+                    tr
+                        td(class='calendar_weekday') Пн
+                        td(class='calendar_weekday') Вт
+                        td(class='calendar_weekday') Ср
+                        td(class='calendar_weekday') Чт
+                        td(class='calendar_weekday') Пт
+                        td(class='calendar_weekday') Сб
+                        td(class='calendar_weekday') Вс
+                    tr
+                        td(class='calendar_day calendar_day_old') 1
+                        td(class='calendar_day calendar_day_old') 44
+                        td(class='calendar_day calendar_day_old') 2
+                        td(class='calendar_day') 2
+                        td(class='calendar_day') 2
+                        td(class='calendar_day') 3
+                        td(class='calendar_day') 3
+                    tr
+                        td(class='calendar_day') 1
+                        td(class='calendar_day') 44
+                        td(class='calendar_day calendar_today') 2
+                        td(class='calendar_day') 2
+                        td(class='calendar_day') 2
+                        td(class='calendar_day') 3
+                        td(class='calendar_day') 3
+                    tr
+                        td(class='calendar_day') 1
+                        td(class='calendar_day') 44
+                        td(class='calendar_day') 2
+                        td(class='calendar_day') 2
+                        td(class='calendar_day') 2
+                        td(class='calendar_day') 3
+                        td(class='calendar_day') 3
+                    tr
+                        td(class='calendar_day') 1
+                        td(class='calendar_day') 44
+                        td(class='calendar_day') 2
+                        td(class='calendar_day') 2
+                        td(class='calendar_day') 2
+                        td(class='calendar_day') 3
+                        td(class='calendar_day') 3
+                    tr
+                        td(class='calendar_day') 1
+                        td(class='calendar_day calendar_date_start') 44
+                        td(class='calendar_day calendar_day_stretch') 2
+                        td(class='calendar_day calendar_day_stretch') 2
+                        td(class='calendar_day calendar_day_stretch') 2
+                        td(class='calendar_day calendar_day_stretch') 3
+                        td(class='calendar_day calendar_date_end') 3
+            div(class='calendar_footer')
+                div(class='calendar_button date_clean') очистить
+                div(class='calendar_button date_approve') применить

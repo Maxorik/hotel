@@ -8,4 +8,5 @@ function scripts_require(){
     require('./js/exp_drop');
     require('./js/like');
     require('./js/ratestars');
+    require('./js/calendar');
 }

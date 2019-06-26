@@ -1,5 +1,9 @@
-var stars = document.getElementById('stars');
-    stars.onclick = function (event){
+var stars = document.getElementsByClassName('stars');
+for(var i=0; i<stars.length; i++){
+        stars[i].addEventListener('click', ratestar, false);
+    }
+
+    function ratestar(event){
         var target = event.target;
         
         if(target.classList.contains("fa-star-o")){

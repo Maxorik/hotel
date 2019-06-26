@@ -1,0 +1,86 @@
+.calendar_list{
+    width:320px;
+    min-height:370px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.calendar_mounth{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 18px;  
+}
+
+.calendar_header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+.calendar_arrow:hover{
+    cursor: pointer;
+}
+
+.calendar_weekday{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color:#BC9CFF;
+    text-align: center;
+    width:40px;
+    line-height: 40px;
+}
+
+.calendar_day{
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+    line-height: 36px;
+    cursor: pointer;
+}
+
+.calendar_today{
+    color: white;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 100%;
+}
+
+.calendar_date_start, .calendar_date_end{
+    color: white;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 100%;
+}
+
+.calendar_day_old{
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.calendar_day_stretch{
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    opacity: 0.25;
+}
+
+.calendar_drop:hover{
+    cursor: pointer;
+    color:green;
+}
+
+.calendar_footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.calendar_button{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform:uppercase;
+    cursor: pointer;
+    color:rgba(31, 32, 65, 0.5);
+}
