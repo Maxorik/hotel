@@ -7,8 +7,15 @@ html
     
     body
         div(class='theblock')
-            div(class='bold_label') calendar
-            span(class='fa fa-chevron-down calendar_drop')
+            div(class='flex')
+                div(class='bold_label left twolabel') прибытие
+                div(class='bold_label twolabel') выезд
+            input(class='input small' placeholder='ДД.ММ.ГГГГ')
+            span(class='abs fa fa-chevron-down left calendar_drop')
+            
+            input(class='input small' placeholder='ДД.ММ.ГГГГ')
+            span(class='abs fa fa-chevron-down calendar_drop')
+    
         div(class='calendar_list' hidden id='cal')
             div(class='calendar_header')
                 div(class='calendar_arrow arrow_back')

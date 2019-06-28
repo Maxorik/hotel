@@ -1,7 +1,8 @@
 .calendar_list{
-    width:320px;
-    min-height:370px;
+    width:318px;
     border: 1px solid rgba(31, 32, 65, 0.25);
+    margin-left: 20px;
+    margin-top: -21px;
 }
 
 .calendar_mounth{
@@ -20,8 +21,8 @@
 
 .calendar_table{
     border-spacing:0;
+    margin-left: 18px;
 }
-
 
 .calendar_arrow{
     display: flex;
@@ -63,6 +64,12 @@
     color: white;
     background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
     border-radius: 100%;
+    position: absolute;
+    z-index: 90;
+    width:39px;
+    height:38px;
+    margin-top: -37px;
+    font-weight: bold;
 }
 
 
@@ -71,8 +78,7 @@
 }
 
 .calendar_day_stretch{
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    opacity: 0.25;
+    background-color: #eee7fe;
 }
 
 .calendar_drop:hover{
@@ -92,21 +98,36 @@
     font-size: 12px;
     text-transform:uppercase;
     cursor: pointer;
+    color: #BC9CFF;
+}
+
+.calendar_button:hover{
     color:rgba(31, 32, 65, 0.5);
 }
 
 .stretch_left{
-    background: linear-gradient(to right, transparent 50%, #8BA4F9 50%);
-    opacity: 0.25;
+    background: linear-gradient(to right, transparent 50%, #eee7fe 50%);
+    font-weight: bold;
 }
 
 .stretch_right{
-    background: linear-gradient(to left, transparent 50%, #8BA4F9 50%);
-    opacity: 0.25;
+    background: linear-gradient(to left, transparent 50%, #eee7fe 50%);
+    font-weight: bold;
 }
 
 .calendar_date_int{
     color: white;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 100%;
+    font-family: Montserrat;
+    font-size: 12px;
+    text-align: center;
+    line-height: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    z-index: 90;
+    width:39px;
+    height:38px;
+    margin-top: -37px;
 }

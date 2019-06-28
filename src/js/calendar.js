@@ -1,16 +1,14 @@
-    const mounts_ru =['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь',];
+    const mounts_ru =['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
     var now = new Date();
     var thismounth = +now.getMonth();
-    const nowmounth = thismounth;
+    var nowmounth = thismounth;
     var thisyear = +now.getFullYear();
     var thisday = +now.getDate();
     var beg_interval = 0;
     var end_interval = 0;
     const calendar_drop = document.getElementsByClassName('calendar_drop');
     const calendar_list = document.getElementsByClassName('calendar_list');
-    //const calendardays = document.getElementsByClassName('calendar_day');
-    
-    //var cal = document.getElementById('cal');
+
     for(var i=0; i<calendar_drop.length; i++){
         calendar_drop[i].addEventListener('click', drop_cal, false);
     }
@@ -20,18 +18,15 @@
     }
   
     function drop_cal(event){
-    //cal.onclick = function(event){
         let target = event.target;
         const cal_main = target.parentElement.nextElementSibling;
         cal_main.hidden = false;
         const mounth_name = cal_main.firstElementChild.firstElementChild.nextElementSibling;
         mounth_name.textContent = mounts_ru[thismounth] + ' ' + thisyear;
-        
         createCalendar(thisyear, thismounth+1);
     }
 
     function cal_click(event){
-        //cal.onclick = function(event){
         var target = event.target;
         if(target.classList == ''){
             target = target.parentElement;
@@ -43,9 +38,14 @@
             }
             else return;
         }
-        else if(target.classList.contains('calendar_day')){
+        if(target.classList.contains('calendar_day')){
             highlight(target);
-            strecth();
+        }
+        if(target.classList.contains('date_clean')){
+            reload_calendar(target);
+        }
+        else if(target.classList.contains('date_approve')){
+            approve_calendar(target);
         }
     }
  
@@ -93,7 +93,10 @@
             if(qweek[i].classList.contains('calendar_day'))
                 {qweek[i].innerHTML = dd;
                  if(dd == thisday && thismounth == nowmounth){
-                        qweek[i].classList.add('calendar_today');
+                    var itstoday = document.createElement('div');
+                    itstoday.className = 'calendar_today';
+                    itstoday.textContent = qweek[i].textContent;
+                    qweek[i].insertBefore(itstoday, qweek[i].children[0]);
                     }
                 dd++;
             }
@@ -130,50 +133,48 @@
 
     function highlight(target){
         if(beg_interval == 0){
-            if(!target.classList.contains('calendar_date_int')){
-                target.classList.add('calendar_date_int');
-                beg_interval = +target.textContent;
+            if(!target.children.length>0){
+                var beginterval = document.createElement('div');
+                beginterval.className = 'calendar_date_int';
+                beginterval.textContent = target.textContent;
+                beg_interval = beginterval.textContent;
+                target.insertBefore(beginterval, target.children[0]);
             }
         }
-        else if(beg_interval != 0){
-            if(target.classList.contains('calendar_date_int')){
-                target.classList.remove('calendar_date_int');
-                beg_interval = 0;
-                clean_strecth();
-            }
-        }
-        
-        if(end_interval == 0){
-            if(!target.classList.contains('calendar_date_int')){
-                target.classList.add('calendar_date_int');
-                end_interval = +target.textContent;
-            }
-        }
-        
-        else if(end_interval != 0){
-            if(target.classList.contains('calendar_date_int')){
-                target.classList.remove('calendar_date_int');
-                end_interval = 0;
-                clean_strecth();
+        else if(end_interval == 0){
+            if(!target.children.length>0){
+                var endinterval = document.createElement('div');
+                endinterval.className = 'calendar_date_int';
+                endinterval.textContent = target.textContent;
+                end_interval = endinterval.textContent;
+                target.insertBefore(endinterval, target.children[0]);
+                strecth();
             }
         }
     }
 
     function strecth(){
+        if(+beg_interval > end_interval){
+            var z = +end_interval;
+            end_interval = beg_interval;
+            beg_interval = z;
+        }
+        var int_length = end_interval - beg_interval - 1;
+        var b,e;
         var calendardays = document.getElementsByClassName('calendar_day');
-        if(beg_interval != 0 && end_interval !=0 ){
-            for(var i=0; i<calendardays.length; i++){
-                if(calendardays[i].textContent == beg_interval){
-                    calendardays[i].classList.add('stretch_left');
-                    //calendardays[i].classList.remove('calendar_date_int');
-                    while(calendardays[i+1].textContent != end_interval){
-                        calendardays[i+1].classList.add('calendar_day_stretch');
-                        i++;
-                    }
-                //calendardays[i+1].classList.remove('calendar_date_int');
-                calendardays[i+1].classList.add('stretch_right');
-                }
+        for(var i=0; i<calendardays.length; i++){
+            if(calendardays[i].textContent == beg_interval+ beg_interval){
+                calendardays[i].classList.add('stretch_left');
+                b = i+1;
             }
+            if(calendardays[i].textContent == end_interval+end_interval){
+                calendardays[i].classList.add('stretch_right');
+                e = i;
+                i=calendardays.length;
+            }
+        }
+        for(var i = b; i<e; i++){
+            calendardays[i].classList.add('calendar_day_stretch');
         }
     }
 
@@ -183,6 +184,7 @@
             calendardays[i].textContent = '';
             calendardays[i].classList.remove('calendar_today');
             calendardays[i].classList.remove('calendar_day_old');
+            calendardays[i].classList.remove('calendar_date_int');
         }
         clean_strecth();
     }
@@ -194,4 +196,44 @@
             calendardays[i].classList.remove('stretch_left');
             calendardays[i].classList.remove('stretch_right');
         }
+    }
+
+    function reload_calendar(target){
+        clean_calendar();
+        now = new Date();
+        thismounth = +now.getMonth();
+        nowmounth = thismounth;
+        thisyear = +now.getFullYear();
+        thisday = +now.getDate();
+        beg_interval = 0;
+        end_interval = 0;
+        createCalendar(thisyear, thismounth+1);
+        target.parentElement.parentElement.firstElementChild.firstElementChild.nextElementSibling.textContent = mounts_ru[thismounth] + ' ' + thisyear;
+    }
+
+    function approve_calendar(target){
+        if(beg_interval!=0 && end_interval!=0){
+            var b_mounth = thismounth + 1 + '';
+            if(beg_interval.length < 2){
+                beg_interval = '0' + beg_interval;
+            }
+            if(end_interval.length < 2){
+                end_interval = '0' + end_interval;
+            }
+            if(b_mounth.length < 2){
+                b_mounth = '0' + b_mounth;
+            }
+            var str_from =  beg_interval + '.' + b_mounth + '.' + thisyear;
+            var str_to =  end_interval + '.' + b_mounth + '.' + thisyear;
+        }
+        reload_calendar(target);
+        var input_from = target.parentElement.parentElement.previousElementSibling.firstElementChild.nextElementSibling;
+        input_from.value = str_from;
+        input_to = input_from.nextElementSibling.nextElementSibling;
+        input_to.value = str_to;
+        if(input_from.value == 'undefined'){
+            input_from.value = '';
+            input_to.value = '';
+        }
+        target.parentElement.parentElement.hidden = true;
     }
