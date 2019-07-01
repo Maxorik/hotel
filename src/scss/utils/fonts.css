@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "HelveticaNeueCyr-Black";
+  src: url("/assets/fonts/HelveticaNeueCyr/Black/HelveticaNeueCyr-Black.eot");
+  /* IE9 Compat Modes */
+  src: url("/assets/fonts/HelveticaNeueCyr/Black/HelveticaNeueCyr-Black.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/HelveticaNeueCyr/Black/HelveticaNeueCyr-Black.woff") format("woff"), url("/assets/fonts/HelveticaNeueCyr/Black/HelveticaNeueCyr-Black.ttf") format("truetype"); }
+
+/*# sourceMappingURL=fonts.css.map */

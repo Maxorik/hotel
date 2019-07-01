@@ -70,6 +70,8 @@
 .toggle__label{
     color:rgba(31, 32, 65, 0.75);
     margin: 10px;
+    font-size: 14px;
+    font-family: Montserrat;
 }
 
 /*

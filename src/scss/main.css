@@ -1,0 +1,105 @@
+@import url(../css/bullet.css);
+@import url(../css/buttons.css);
+@import url(../css/calendar.css);
+@import url(../css/checkbox_buttons.css);
+@import url(../css/date_form.css);
+@import url(../css/dropdown_list.css);
+@import url(../css/enter_form.css);
+@import url(../css/expandable_checkbox.css);
+@import url(../css/footer.css);
+@import url(../css/h.css);
+@import url(../css/header.css);
+@import url(../css/inputs.css);
+@import url(../css/likebutton.css);
+@import url(../css/logo.css);
+@import url(../css/nav_elem.css);
+@import url(../css/pagination.css);
+@import url(../css/radio.css);
+@import url(../css/range_slider.css);
+@import url(../css/ratebutton.css);
+@import url(../css/toggle.css);
+@font-face {
+  font-family: "HelveticaNeueCyr-Black";
+  src: url("/assets/fonts/HelveticaNeueCyr/Black/HelveticaNeueCyr-Black.eot");
+  /* IE9 Compat Modes */
+  src: url("/assets/fonts/HelveticaNeueCyr/Black/HelveticaNeueCyr-Black.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/HelveticaNeueCyr/Black/HelveticaNeueCyr-Black.woff") format("woff"), url("/assets/fonts/HelveticaNeueCyr/Black/HelveticaNeueCyr-Black.ttf") format("truetype"); }
+/*@import url(font-awesome.min.css);*/
+html {
+  line-height: 1.4;
+  font-size: 18px;
+  color: #101010;
+  height: 100%; }
+  @media screen and (max-width: 1280px) {
+    html {
+      font-size: 16px; } }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 15px; } }
+  @media screen and (max-width: 480px) {
+    html {
+      font-size: 14px; } }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+section, .section {
+  position: relative;
+  padding: 40px 0; }
+  @media screen and (max-width: 1280px) {
+    section, .section {
+      padding: 36px 0; } }
+  @media screen and (max-width: 1280px) {
+    section, .section {
+      padding: 28px 0; } }
+  @media screen and (max-width: 1280px) {
+    section, .section {
+      padding: 20px 0; } }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100vh; }
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+.container {
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1280px; }
+  @media screen and (max-width: 980px) {
+    .container {
+      max-width: tableWidth; } }
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: phoneWidth; } }
+  @media screen and (max-width: 480px) {
+    .container {
+      max-width: smPhoneWidth; } }
+
+/*# sourceMappingURL=main.css.map */

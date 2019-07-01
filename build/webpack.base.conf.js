@@ -41,7 +41,7 @@ module.exports = {
                 name: '[name].[ext]'
             }
         },{
-            test: /\.(woff|woff2|ttf|eof)$/,
+            test: /\.(woff|woff2|ttf|eof|font-woff|x-woff)$/,
             use: ['file-loader', 'file-loader?name=fonts/[name].[ext]']
         },
             {

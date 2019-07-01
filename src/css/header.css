@@ -5,10 +5,10 @@ header{
     flex-direction: row;
     flex-wrap: nowrap;
     align-items:center; 
-    font-style: normal;
-    font-weight: normal;
     color: rgba(31, 32, 65, 0.5);
     padding:18px;
+    font-size: 14px;
+    font-family: Montserrat;
 }
 
 .header_buttons{
