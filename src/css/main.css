@@ -1,3 +1,4 @@
+/*
 @import url(bullet.css);
 @import url(buttons.css);
 @import url(calendar.css);
@@ -6,7 +7,7 @@
 @import url(dropdown_list.css);
 @import url(enter_form.css);
 @import url(expandable_checkbox.css);
-/*@import url(font-awesome.min.css);*/
+/*@import url(font-awesome.min.css);
 @import url(footer.css);
 @import url(h.css);
 @import url(header.css);
@@ -19,12 +20,7 @@
 @import url(range_slider.css);
 @import url(ratebutton.css);
 @import url(toggle.css);
-
-@font-face {
-    font-family: fontawesome-webfont; /* Имя шрифта */
-    src: url(fonts/fontawesome-webfont.ttf); /* Путь к файлу со шрифтом */
-   }
-
+*/
 
 a {
   text-decoration: none; }

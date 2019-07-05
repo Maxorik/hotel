@@ -19,18 +19,3 @@
     font-size: 24px;
     line-height: 20px;
 }
-
-
-/*
-ratestars.js
-
-div(class='theblock')
-            label(class='bold_label') rate button
-            div(class='flex' id='stars')
-                span(class='fa fa-star-o')
-                span(class='fa fa-star-o')
-                span(class='fa fa-star-o')
-                span(class='fa fa-star-o')
-                span(class='fa fa-star-o')
-                span(class='fa fa-star' style='display:none')
-*/

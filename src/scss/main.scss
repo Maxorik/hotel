@@ -1,9 +1,18 @@
+/*
+
 @import "utils/libs";
 @import "utils/vars";
 @import "utils/mixins";
 @import "utils/fonts";
 @import url(../css/main.css);
 
+@font-face {
+  font-family: "font-awesome";
+  src: url('/fonts/fontawesome-webfont.eot'); 
+  src: url('/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), 
+       url('/fonts/fontawesome-webfont.woff') format('woff'),
+       url('/fonts/fontawesome-webfont.ttf')  format('truetype'),
+}
 
 html {
   line-height: $mainLineHeight;
@@ -89,3 +98,5 @@ section, .section {
 
 // Modules
 //@import "modules/wrapper.scss";
+
+*/
