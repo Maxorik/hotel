@@ -4,8 +4,8 @@
 
 .checkbox-circle__checkbox-custom {
 	position: relative;
-	width: 20px;             
-	height: 20px;            
+	width: 1.3em;             
+	height: 1.3em;           
 	border: 1px solid rgba(31, 32, 65, 0.25);
 	border-radius: 100%;
     margin-right: 10px;
@@ -23,7 +23,7 @@
 .checkbox-circle__label {
 	display: inline-block;
 	vertical-align: middle;
-    margin-top: 11px;
+    margin-top: -2em;
 }
 
 .checkbox-circle:checked + .checkbox-circle__checkbox-custom::before {

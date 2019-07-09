@@ -63,9 +63,13 @@
 .inp_arrow{
     position:absolute;
     margin-left: 12.4em;
-    margin-top: -2.2em;
+    margin-top: -3em;
 }
 
+.many_inputs{
+    display: flex;
+    flex-direction: column;
+}
 /*
 div(class='theblock')
 input(class='input big' placeholder='Спальни, Кровати, Ванные комнаты')

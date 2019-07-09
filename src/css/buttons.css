@@ -1,17 +1,26 @@
 .main_button{
+    position: relative;
+    display: flex;
     border:2px solid #BC9CFF;
     border-radius: 22px;
     color:#BC9CFF;
     font-weight: bold;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
     font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
 }
 
-.main_button:hover{
+.main_button:hover, .btn_active{
     color:#fff;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     cursor: pointer;
+}
+
+.btn_arrow{
+    position: absolute;
+    right: 0.75em;
 }
