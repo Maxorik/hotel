@@ -1,1 +1,1 @@
-require('./js/qwerty.js');
+//require('./js/qwerty.js');

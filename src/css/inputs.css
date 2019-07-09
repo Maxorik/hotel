@@ -51,8 +51,19 @@
     margin-right: 15px;
 }
 
+.middle{
+    width: 15em;
+    height: 44px;
+}
+
 .small+.abs{
     margin-left: -45px;
+}
+
+.inp_arrow{
+    position:absolute;
+    margin-left: 12.4em;
+    margin-top: -2.2em;
 }
 
 /*
