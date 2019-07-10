@@ -1,8 +1,9 @@
 .calendar_list{
     width:318px;
     border: 1px solid rgba(31, 32, 65, 0.25);
-    margin-left: 20px;
-    margin-top: -21px;
+    position: absolute;
+    z-index: 99;
+    background-color: #fff;
 }
 
 .calendar_mounth{

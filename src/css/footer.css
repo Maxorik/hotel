@@ -18,12 +18,42 @@
     color: rgba(31, 32, 65, 0.5);
 }
 
+.footer_nav:hover{
+    cursor: pointer;
+    color: rgba(31, 32, 65, 1);
+}
+
 .footer_copyright{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 0 auto;
-    padding-left: 10%;
+    padding:0 10%;
     border-top: 1px solid #E5E5E5;
     font-family: Montserrat;
     color: rgba(31, 32, 65, 0.75);
     font-size: 14px;
     line-height: 24px;
+}
+
+.soc_i{
+    width: 2em;
+    height: 2em;
+    display: inline-block;
+    background: url('/assets/img/soc.png') no-repeat;
+    cursor: pointer;
+}
+
+.tw{
+    background-position: 0px 0;
+    margin-right: 1em;
+}
+
+.fb{
+    background-position: -40px 0;
+    margin-right: 1em;
+}
+
+.inst{
+    background-position: -80px 0;
 }

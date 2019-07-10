@@ -19,7 +19,7 @@
   
     function drop_cal(event){
         let target = event.target;
-        const cal_main = target.parentElement.nextElementSibling;
+        const cal_main = target.parentElement.parentElement.nextElementSibling;
         cal_main.hidden = false;
         const mounth_name = cal_main.firstElementChild.firstElementChild.nextElementSibling;
         mounth_name.textContent = mounts_ru[thismounth] + ' ' + thisyear;
@@ -208,7 +208,7 @@
         beg_interval = 0;
         end_interval = 0;
         createCalendar(thisyear, thismounth+1);
-        target.parentElement.parentElement.firstElementChild.firstElementChild.nextElementSibling.textContent = mounts_ru[thismounth] + ' ' + thisyear;
+        //target.parentElement.parentElement.firstElementChild.firstElementChild.nextElementSibling.textContent = mounts_ru[thismounth] + ' ' + thisyear;
     }
 
     function approve_calendar(target){
@@ -227,13 +227,13 @@
             var str_to =  end_interval + '.' + b_mounth + '.' + thisyear;
         }
         reload_calendar(target);
-        var input_from = target.parentElement.parentElement.previousElementSibling.firstElementChild.nextElementSibling;
+        var input_from = target.parentElement.parentElement.parentElement.previousElementSibling.firstElementChild.childNodes[1];
         input_from.value = str_from;
-        input_to = input_from.nextElementSibling.nextElementSibling;
+        input_to = input_from.parentElement.nextElementSibling.childNodes[1];
         input_to.value = str_to;
         if(input_from.value == 'undefined'){
             input_from.value = '';
             input_to.value = '';
         }
-        target.parentElement.parentElement.hidden = true;
+        target.parentElement.parentElement.parentElement.hidden = true;
     }

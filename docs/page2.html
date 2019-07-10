@@ -181,7 +181,7 @@ body {
     position: absolute;
     right: 0.75em;
 }
-</style></head><body><div class="header_buttons"><div id="header_buttons"><div class="main_button btn_enter"><span>ВОЙТИ</span></div><div class="main_button btn_reg"><span>ЗАРЕГИСТРИРОВАТЬСЯ</span></div></div><div id="header_username"></div></div></body></html></header></body></html><div id="page0_back"><style>.form_reg, .form_enter{
+</style></head><body><div class="header_buttons"><div id="header_buttons"><div class="main_button btn_enter"><span>ВОЙТИ</span></div><div class="main_button btn_reg"><span>ЗАРЕГИСТРИРОВАТЬСЯ</span></div></div><div id="header_username"></div></div></body></html></header></body></html><div id="page2_back"><style>.form_reg, .form_enter{
     display: none;
 }
 
@@ -337,381 +337,149 @@ span(class='abs fa fa-chevron-down')
     position: absolute;
     right: 0.75em;
 }
-</style><div class="form_main form_reg"><p class="form_h">Регистрация аккаунта</p><input class="input big" placeholder="Имя"><input class="input big" placeholder="Фамилия"><style>.checkbox-circle {
-	display: none;
-}
-
-.checkbox-circle__checkbox-custom {
-	position: relative;
-	width: 1.3em;             
-	height: 1.3em;           
-	border: 1px solid rgba(31, 32, 65, 0.25);
-	border-radius: 100%;
-    margin-right: 10px;
-    cursor:pointer;
-}
-
-.checkbox-circle__label{
-    margin-right:20px;
-    color: rgba(31, 32, 65, 0.5);
-    font-size: 14px;
-    font-family: Montserrat;
-}
-
-.checkbox-circle__checkbox-custom,
-.checkbox-circle__label {
-	display: inline-block;
-	vertical-align: middle;
-    margin-top: -2em;
-}
-
-.checkbox-circle:checked + .checkbox-circle__checkbox-custom::before {
-	content: "";             
-	display: block;			
-	position: absolute;     
-	top: 2px;
-	right: 2px;
-	bottom: 2px;
-	left: 2px;
-	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-	border-radius: 100%;
-}
-
-.checkbox-circle:checked + .checkbox-circle__checkbox-custom + .checkbox-circle__label{
-    color: rgba(31, 32, 65, 0.75);
-}
-
-/*
-        label
-            input(class='checkbox' type='radio' name='sex' checked)
-            span(class='checkbox-custom')
-            span(class='label') Мужчина
-            
-        label
-            input(class='checkbox' type='radio' name='sex')
-            span(class='checkbox-custom')
-            span(class='label') Женщина
-*/</style><div class="theblock"><div class="sex_radio"><label><input class="checkbox-circle" type="radio" name="sex" checked><span class="checkbox-circle__checkbox-custom"></span><span class="checkbox-circle__label">Мужчина</span></label><label><input class="checkbox-circle" type="radio" name="sex"><span class="checkbox-circle__checkbox-custom"></span><span class="checkbox-circle__label">Женщина</span></label></div></div><div><div class="bold_label">дата рождения</div><input class="input big" placeholder="ДД.ММ.ГГГГ"></div><div class="many_inputs"><div class="bold_label">данные для входа в сервис</div><input class="input big" placeholder="Email"><input class="input big" placeholder="Пароль" type="password"></div><style>.button-cover, .knobs, .layer{
+</style><div class="form_main form_find_number"><p class="form_h">Найдём номера под ваши пожелания</p><style> .calendar_list{
+    width:318px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.button-spec{
-    position: relative;
-    /*top: 50%;*/
-    width: 40px;
-    height: 20px;
-    overflow: hidden;
-    border:1px solid rgba(31, 32, 65, 0.25);
-}
-
-.button-spec.r, .button-spec.r .layer{
-    border-radius: 100px;
-}
-
-.toggle{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 3;
-}
-
-.knobs{
-    z-index: 2;
-}
-
-.layer{
-    width: 100%;
+    z-index: 99;
     background-color: #fff;
-    transition: 0.3s ease all;
-    z-index: 1;
 }
 
+.calendar_mounth{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 30px;  
+}
 
-#button-spec .knobs:before{
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 0.9em;
-    height: 0.2em;
-    line-height: 1;
-    padding: 7px 2px;
-    background: rgba(31, 32, 65, 0.25);  
+.calendar_header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.calendar_table{
+    border-spacing:0;
+    margin-left: 18px;
+}
+
+.calendar_arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border:3px solid transparent;
+    width:30px;
+    height:30px;
     border-radius: 100%;
-    transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
 }
 
-#button-spec .toggle:checked + .knobs:before{
-    left: 21px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);   
+.calendar_arrow:hover{
+    border-color: #BC9CFF;
 }
 
-
-#button-spec .knobs, #button-spec .knobs:before, #button-spec .layer{
-    transition: 0.3s ease all;
-}
-
-.toggle__label{
-    color:rgba(31, 32, 65, 0.75);
-    margin-left: 10px;
-    font-size: 14px;
+.calendar_weekday{
     font-family: Montserrat;
-}
-
-.flex-toggle{
-    display: flex;
-    align-items: center;
-}
-
-/*
-div(class='theblock')
-            label(class='bold_label') toggle
-            div(class='flex')
-                div(class="button-spec r" id="button-spec")
-                    input(type="checkbox" class="toggle")
-                    div(class="knobs")
-                    div(class="layer")
-                span(class='toggle__label') Получать спецпредложения
-*/.checkbox-square {
-    position: absolute;
-    left: -9999px;
-}
-
-.checkbox-square + label{
-    display: inline-block;
-    position: relative;
-    padding-left: 28px;
-    line-height: 20px;
-    cursor: pointer;
-    font-family: Montserrat;
-}
-.checkbox-square + label:before{
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 18px;
-    height: 18px;
-    border: 1px solid #dddddd;
-    background-color: #ffffff;
-    border-radius: 2px;
-}
-
-.checkbox-square + label:after{
-    content: "";
-    position: absolute;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    left: 4px;
-    top: 5px;
-    width: 9px;
-    height: 7px;
-    border-radius: 1px;
-    border-left: 3px solid #8BA4F9;
-    border-bottom: 3px solid #8BA4F9;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-        
-.checkbox-square:not(:checked) + label:after{
-    opacity: 0;
-}
-
-.checkbox-square:checked + label:after{
-    opacity: 1;
-}
-
-.checkbox-square + label{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    color:rgba(31, 32, 65, 0.5);
-}
-
-
-
-
-/*
-        label(class='flex')
-                    input(class="checkbox-square" type="checkbox" id='cs1')
-                    label(for='cs1') Можно курить
-*/</style><div class="flex-toggle"><div class="button-spec r" id="button-spec"><input class="toggle" type="checkbox"><div class="knobs"></div><div class="layer"></div></div><span class="toggle__label">Получать спецпредложения</span></div><div class="main_button btn_active"><span>перейти к оплате</span><div class="btn_arrow"><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9 0.426758L17.0156 8.44238L9 16.458L7.59375 15.0518L13.1719 9.42676H0.984375V7.45801H13.1719L7.59375 1.83301L9 0.426758Z" fill="white"/>
-</svg>
-</div></div><div class="enter_block"><p class="btn_label">Уже есть аккаунт на Toxin</p><div class="main_button btn_enter"><span>ВОЙТИ</span></div></div></div><style>.form_reg, .form_enter{
-    display: none;
-}
-
-.form_main{
-    background-color: #fff;
-    padding: 30px;
-    flex-direction: column;
-    border-radius: 4px;
-}
-
-.form_find_number{
-    background-color: #fff;
-    padding: 30px;
-    flex-direction: column;
-    border-radius: 4px;
-    margin-left:10%;
-    margin-top: 5%;
-}
-
-.form_h{
-    font-size: 24px;
-    font-family: Quicksand;
     font-weight: bold;
-    color: #1F2041;
-    max-width: 320px;
-}
-
-.input{
-    margin-bottom:10px;
-}
-
-.sex_radio{
-    margin-left: -20px;
-}
-
-.many_inputs{
-    margin-top: 10px;
-}
-
-.btn_active{
-    min-width: 276px;
-    margin:0;
-    margin-top: 20px;
-}
-
-.enter_block{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}.input{
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    box-sizing: border-box;
-    border-radius: 4px;
-    padding-left: 15px;
-    color: rgba(31, 32, 65, 0.75);
-}
-
-.input:hover, .input:focus{
-    border: 1px solid rgba(31, 32, 65, 0.5);
-    color: rgba(31, 32, 65, 0.5);
-}
-
-.input::placeholder{
-    color: rgba(31, 32, 65, 0.25);
-    margin-left:15px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 18px;
-}
-
-.placeholder-alert::placeholder{
-    color:red;
-}
-
-.theblock{
-    margin:20px;
-}
-
-.abs{
-    color:rgba(31, 32, 65, 0.25);
-    position: absolute;
-    z-index: 90;
-    margin-top: 13px;
-    margin-left: -30px;
-}
-
-.abs:hover, abs:focus{
-    color:rgba(31, 32, 65, 0.5);
-    cursor: pointer;
-}
-
-.big{
-    width: 320px;
-    height: 44px;
-}
-
-.small{
-    width: 150px;
-    height: 44px;
-}
-
-.middle{
-    width: 15em;
-    height: 44px;
-}
-
-.small+.abs{
-    margin-left: -45px;
-}
-
-.inp_arrow{
-    position:absolute;
-    margin-left: 12.4em;
-    margin-top: -3em;
-}
-
-.many_inputs{
-    display: flex;
-    flex-direction: column;
-}
-
-.small_input_part{
-    margin-right: 20px;
-}
-
-/*
-div(class='theblock')
-input(class='input big' placeholder='Спальни, Кровати, Ванные комнаты')
-span(class='abs fa fa-chevron-down')
-*/.main_button{
-    position: relative;
-    display: flex;
-    border:2px solid #BC9CFF;
-    border-radius: 22px;
+    font-size: 12px;
+    line-height: 15px;
     color:#BC9CFF;
-    font-weight: bold;
-    padding: 10px 20px 10px 20px;
+    text-align: center;
+    width:40px;
+    line-height: 40px;
+}
+
+.calendar_day{
     font-family: Montserrat;
     font-size: 12px;
     line-height: 15px;
-    text-transform: uppercase;
-    align-items: center;
-    justify-content: center;
-}
-
-.main_button:hover, .btn_active{
-    color:#fff;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+    line-height: 36px;
     cursor: pointer;
 }
 
-.btn_arrow{
+.calendar_today{
+    color: white;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 100%;
     position: absolute;
-    right: 0.75em;
+    z-index: 90;
+    width:39px;
+    height:38px;
+    margin-top: -37px;
+    font-weight: bold;
 }
-</style><div class="form_main form_enter"><p class="form_h">Войти</p><div class="many_inputs"><input class="input big" placeholder="Email"><input class="input big" placeholder="Пароль" type="password"></div><div class="main_button btn_active"><span>войти</span><div class="btn_arrow"><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+
+.calendar_day_old{
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.calendar_day_stretch{
+    background-color: #eee7fe;
+}
+
+.calendar_drop:hover{
+    cursor: pointer;
+    color:green;
+}
+
+.calendar_footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.calendar_button{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform:uppercase;
+    cursor: pointer;
+    color: #BC9CFF;
+}
+
+.calendar_button:hover{
+    color:rgba(31, 32, 65, 0.5);
+}
+
+.stretch_left{
+    background: linear-gradient(to right, transparent 50%, #eee7fe 50%);
+    font-weight: bold;
+}
+
+.stretch_right{
+    background: linear-gradient(to left, transparent 50%, #eee7fe 50%);
+    font-weight: bold;
+}
+
+.calendar_date_int{
+    color: white;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 100%;
+    font-family: Montserrat;
+    font-size: 12px;
+    text-align: center;
+    line-height: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    z-index: 90;
+    width:39px;
+    height:38px;
+    margin-top: -37px;
+}</style><div><div class="flex"><div class="small_input_part"><div class="bold_label">прибытие</div><input class="input small" placeholder="ДД.ММ.ГГГГ"><span class="abs fa fa-chevron-down calendar_drop"></span></div><div><div class="bold_label">выезд</div><input class="input small" placeholder="ДД.ММ.ГГГГ"><span class="abs fa fa-chevron-down calendar_drop"></span></div></div><div class="calendar_list" hidden id="cal"><div class="calendar_header"><div class="calendar_arrow arrow_back"><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.1755 8.01562V9.98438H3.98801L9.56613 15.6094L8.15988 17.0156L0.144258 9L8.15988 0.984375L9.56613 2.39062L3.98801 8.01562H16.1755Z" fill="#BC9CFF"/>
+</svg>
+</div><div class="calendar_mounth"></div><div class="calendar_arrow arrow_forward"><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.36301 0.984375L16.3786 9L8.36301 17.0156L6.95676 15.6094L12.5349 9.98438H0.347383V8.01562H12.5349L6.95676 2.39062L8.36301 0.984375Z" fill="#BC9CFF"/>
+</svg>
+</div></div><div hidden></div><div class="calendar_body"><table class="calendar_table"><tr><td class="calendar_weekday">Пн</td><td class="calendar_weekday">Вт</td><td class="calendar_weekday">Ср</td><td class="calendar_weekday">Чт</td><td class="calendar_weekday">Пт</td><td class="calendar_weekday">Сб</td><td class="calendar_weekday">Вс</td></tr><tr><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td></tr><tr><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td></tr><tr><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td></tr><tr><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td></tr><tr><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td><td class="calendar_day"></td></tr></table><div class="calendar_footer"><div class="calendar_button date_clean">очистить</div><div class="calendar_button date_approve">применить</div></div></div></div></div><div class="many_inputs"><div class="bold_label">гости</div><input class="input big" placeholder="Сколько гостей"></div><div class="main_button btn_active"><span>подобрать номер</span><div class="btn_arrow"><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M9 0.426758L17.0156 8.44238L9 16.458L7.59375 15.0518L13.1719 9.42676H0.984375V7.45801H13.1719L7.59375 1.83301L9 0.426758Z" fill="white"/>
 </svg>
-</div></div><div class="enter_block"><p class="btn_label">Нет аккаунта на Toxin?</p><div class="main_button btn_reg"><span>создать</span></div></div></div></div><style>.footer{
+</div></div></div></div><style>.footer{
     padding: 10%;
     margin: 0 auto;
     display:flex;

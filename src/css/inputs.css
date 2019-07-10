@@ -48,7 +48,6 @@
 .small{
     width: 150px;
     height: 44px;
-    margin-right: 15px;
 }
 
 .middle{
@@ -70,6 +69,11 @@
     display: flex;
     flex-direction: column;
 }
+
+.small_input_part{
+    margin-right: 20px;
+}
+
 /*
 div(class='theblock')
 input(class='input big' placeholder='Спальни, Кровати, Ванные комнаты')

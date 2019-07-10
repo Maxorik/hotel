@@ -1,0 +1,20 @@
+style
+    include ../../css/forms.css
+    include ../../css/inputs.css
+    include ../../css/buttons.css
+div(class='form_main form_enter')
+    p(class='form_h') Войти
+    
+    div(class='many_inputs')
+        input(class='input big' placeholder='Email')
+        input(class='input big' placeholder='Пароль' type='password')
+        
+    div(class='main_button btn_active')
+        span войти
+        div(class='btn_arrow')
+            include ../../img/arrow_forward.svg
+            
+    div(class='enter_block')
+        p(class='btn_label') Нет аккаунта на Toxin?
+        div(class='main_button btn_reg')
+            span создать
