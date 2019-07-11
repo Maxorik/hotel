@@ -40,7 +40,7 @@
     width: 2em;
     height: 2em;
     display: inline-block;
-    background: url('/assets/img/soc.png') no-repeat;
+    background: url('assets/img/soc.png') no-repeat;
     cursor: pointer;
 }
 

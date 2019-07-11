@@ -1,9 +1,12 @@
 .dropdown{
-    width: 320px;
+    position: absolute;
+    z-index: 99;
+    background-color: #fff;
+    width: 318px;
     border: 1px solid rgba(31, 32, 65, 0.25);
     color: rgba(31, 32, 65, 0.25);
     min-height: 50px;
-    margin-top: -2px;
+    margin-top: -0.8em;
 }
 
 .dropdown_part{
@@ -25,14 +28,15 @@
 
 .circle{
     display: flex;
-    width:30px;
-    height:30px;
+    width:2em;
+    height:2em;
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius:100%;
     justify-content: center;
+    align-items: center;
     margin: 8px;
     margin-top: -8px;
-    padding-top: 5px;
+   /* padding-top: 5px;*/
     cursor: pointer;
 }
 
@@ -45,17 +49,3 @@
 .drop_button{
     cursor: pointer;
 }
-
-
-
-/*
-div(class='dropdown')
-    div(class='dropdown_part')
-        span(class='bold_label') СПАЛЬНИ
-        div(class='dropdown_part_right')
-           div(class='circle')
-               span(class='minus_count') -
-           span(class='bold_label c') 0
-           div(class='circle')
-               span(class='plus_count') +
-*/

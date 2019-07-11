@@ -82,6 +82,11 @@
     background-color: #eee7fe;
 }
 
+.calendar_drop::before{
+    position: absolute;
+    left: 1em;
+}
+
 .calendar_drop:hover{
     cursor: pointer;
     color:green;

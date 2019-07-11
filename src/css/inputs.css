@@ -48,6 +48,7 @@
 .small{
     width: 150px;
     height: 44px;
+    position: relative;
 }
 
 .middle{

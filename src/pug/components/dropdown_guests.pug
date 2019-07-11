@@ -1,48 +1,43 @@
-doctype html
-html
-    head
-        meta(charset = 'utf-8')
-        title webpack with pug
-        style 
-            include ../css/inputs.css
-            include ../css/dropdown_list.css
-            include ../css/font-awesome.min.css
-    body
-        div(class='theblock')
-            div(class='bold_label') Dropdown
-            div(class='drop_for_script')
-                input(class='input drop_for_script big drop_button' placeholder='Количество гостей')
-                span(class='abs drop_for_script fa fa-chevron-down')
+style 
+    include ../../css/inputs.css
+    include ../../css/dropdown_list.css
+    include ../../css/font-awesome.min.css
             
-            div(class='dropdown' hidden)
-                div(class='dropdown_part')
-                    span(class='bold_label') ВЗРОСЛЫЕ
-                    div(class='dropdown_part_right')
-                        div(class='circle minus')
-                            span(class='minus_count') -
-                        span(class='bold_label c') 0
-                        div(class='circle plus')
-                            span(class='plus_count') +
+div
+    div(class='bold_label') гости
+    div(class='drop_for_script')
+        input(class='input drop_for_script big drop_button' placeholder='Количество гостей')
+        span(class='abs drop_for_script fa fa-chevron-down')
+            
+    div(class='dropdown' hidden)
+        div(class='dropdown_part')
+            span(class='bold_label') ВЗРОСЛЫЕ
+            div(class='dropdown_part_right')
+                div(class='circle minus')
+                    span(class='minus_count') -
+                span(class='bold_label c') 0
+                div(class='circle plus')
+                    span(class='plus_count') +
                             
-                div(class='dropdown_part')
-                    span(class='bold_label') ДЕТИ
-                    div(class='dropdown_part_right')
-                        div(class='circle minus')
-                            span(class='minus_count') -
-                        span(class='bold_label c') 0
-                        div(class='circle plus')
-                            span(class='plus_count') +
+        div(class='dropdown_part')
+            span(class='bold_label') ДЕТИ
+            div(class='dropdown_part_right')
+                div(class='circle minus')
+                    span(class='minus_count') -
+                span(class='bold_label c') 0
+                div(class='circle plus')
+                    span(class='plus_count') +
                             
-                div(class='dropdown_part')
-                    span(class='bold_label') МЛАДЕНЦЫ
-                    div(class='dropdown_part_right')
-                        div(class='circle minus')
-                            span(class='minus_count') -
-                        span(class='bold_label c') 0
-                        div(class='circle plus')
-                            span(class='plus_count') +
+        div(class='dropdown_part')
+            span(class='bold_label') МЛАДЕНЦЫ
+            div(class='dropdown_part_right')
+                div(class='circle minus')
+                    span(class='minus_count') -
+                span(class='bold_label c') 0
+                div(class='circle plus')
+                    span(class='plus_count') +
                             
-                div(class='dropdown__buttons dropdown_part')
-                    div
-                        span(class='bold_label__gray' hidden) очистить
-                    span(class='bold_label__gray' hidden) применить
+        div(class='dropdown__buttons dropdown_part')
+            div
+                span(class='bold_label__gray' hidden) очистить
+            span(class='bold_label__gray' hidden) применить

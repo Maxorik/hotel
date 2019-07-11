@@ -7,12 +7,11 @@ div(class='form_main form_find_number')
     
     include /calendar.pug
     
-    div(class='many_inputs')
-        div(class='bold_label') гости
-        input(class='input big' placeholder='Сколько гостей')
-        
-    div(class='main_button btn_active')
-        span подобрать номер
-        div(class='btn_arrow')
-            include ../../img/arrow_forward.svg
+    include /dropdown_guests.pug
+    
+    a(href='page3.html')
+        div(class='main_button btn_active')
+            span подобрать номер
+            div(class='btn_arrow')
+                include ../../img/arrow_forward.svg
     
