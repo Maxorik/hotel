@@ -6,6 +6,10 @@
     background-color: #fff;
 }
 
+.c_small{
+    width:268px;
+}
+
 .calendar_mounth{
     font-family: Quicksand;
     font-style: normal;
@@ -85,6 +89,10 @@
 .calendar_drop::before{
     position: absolute;
     left: 1em;
+}
+
+.arr_small::before{
+    left: 0em;
 }
 
 .calendar_drop:hover{

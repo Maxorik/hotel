@@ -1,12 +1,12 @@
 header{
     margin: 0 auto;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items:center; 
     color: rgba(31, 32, 65, 0.5);
-    padding:18px;
+    padding:18px 10%;
     font-size: 14px;
     font-family: Montserrat;
 }

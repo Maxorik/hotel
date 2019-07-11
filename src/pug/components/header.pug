@@ -1,11 +1,35 @@
-doctype html
-html
-    head
-        meta(charset = 'utf-8')
-        style 
-            include ../../css/header.css
-    body
-        header
-            include logo.pug
-            include header_menu.pug
-            include header_buttons.pug
+style 
+    include ../../css/header.css
+    include ../../css/nav_elem.css
+    include ../../css/buttons.css
+header
+    include logo.pug
+            
+    nav(class='header_nav')
+        a(href='index.html')
+            li(class='nav__elem')
+                span Home
+        a(href='page2.html')
+            li(class='nav__elem')
+                span О нас
+        a(href='page3.html')
+            li(class='nav__elem')
+                span Услуги
+                span(class='ti-angle-down')
+        a(href='#')
+            li(class='nav__elem')
+                span Вакансии
+        a(href='#')
+            li(class='nav__elem')
+                span Новости
+        a(href='#')
+            li(class='nav__elem')
+                span Соглашения
+                        
+    div(class='header_buttons')
+        div(id='header_buttons')
+            div(class='main_button btn_enter')
+                span ВОЙТИ
+            div(class='main_button btn_reg')
+                span ЗАРЕГИСТРИРОВАТЬСЯ
+        div(id='header_username')

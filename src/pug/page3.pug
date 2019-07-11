@@ -6,8 +6,12 @@ html
         style
             include ../css/font-awesome.min.css
             include ../css/main.css
+            include ../css/page3.css
     body
         include /components/header.pug
-        div(class='fish')
+        div(class='page3')
+            div(class='left_panel')
+                include /components/filter_numbers.pug
+            div(class='numbers_collage')
 
         include /components/footer.pug

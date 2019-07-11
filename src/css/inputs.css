@@ -45,6 +45,11 @@
     height: 44px;
 }
 
+.panel_input{
+    width: 270px;
+    height: 44px;
+}
+
 .small{
     width: 150px;
     height: 44px;
@@ -55,6 +60,8 @@
     width: 15em;
     height: 44px;
 }
+
+.
 
 .small+.abs{
     margin-left: -45px;

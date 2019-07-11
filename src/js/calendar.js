@@ -1,4 +1,5 @@
     const mounts_ru =['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
+    const mounts_ru_prpad =['Января','Февраля','Марта','Апреля','Мая','Июня','Июля','Августа','Сентября','Октября','Ноября','Декабря'];
     var now = new Date();
     var thismounth = +now.getMonth();
     var nowmounth = thismounth;
@@ -208,7 +209,6 @@
         beg_interval = 0;
         end_interval = 0;
         createCalendar(thisyear, thismounth+1);
-        //target.parentElement.parentElement.firstElementChild.firstElementChild.nextElementSibling.textContent = mounts_ru[thismounth] + ' ' + thisyear;
     }
 
     function approve_calendar(target){
@@ -225,15 +225,29 @@
             }
             var str_from =  beg_interval + '.' + b_mounth + '.' + thisyear;
             var str_to =  end_interval + '.' + b_mounth + '.' + thisyear;
+            
+            var str_from_int = beg_interval + ' ' + mounts_ru_prpad[+b_mounth - 1];
+            var str_from_to = end_interval + ' ' + mounts_ru_prpad[+b_mounth - 1];
         }
         reload_calendar(target);
-        var input_from = target.parentElement.parentElement.parentElement.previousElementSibling.firstElementChild.childNodes[1];
-        input_from.value = str_from;
-        input_to = input_from.parentElement.nextElementSibling.childNodes[1];
-        input_to.value = str_to;
-        if(input_from.value == 'undefined'){
-            input_from.value = '';
-            input_to.value = '';
+        
+        var dates_fields = target.parentElement.parentElement.parentElement.previousElementSibling;
+        if(dates_fields.childNodes.length < 2){
+            var input_date_interval = dates_fields.firstElementChild.childNodes[1];
+            input_date_interval.value = str_from_int + ' - ' + str_from_to;
+            if(input_date_interval.value == 'undefined'){
+                input_date_interval.value = '';
+            };
+        }
+        else{
+            var input_from = dates_fields.firstElementChild.childNodes[1];
+            var input_to = input_from.parentElement.nextElementSibling.childNodes[1];
+            input_from.value = str_from;
+            input_to.value = str_to;
+            if(input_from.value == 'undefined'){
+                input_from.value = '';
+                input_to.value = '';
+            }
         }
         target.parentElement.parentElement.parentElement.hidden = true;
     }

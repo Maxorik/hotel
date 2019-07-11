@@ -32,8 +32,8 @@
     transition: all 0.2s ease;
     left: 4px;
     top: 5px;
-    width: 9px;
-    height: 7px;
+    width: 8px;
+    height: 6px;
     border-radius: 1px;
     border-left: 3px solid #8BA4F9;
     border-bottom: 3px solid #8BA4F9;
@@ -60,11 +60,6 @@
     color:rgba(31, 32, 65, 0.5);
 }
 
-
-
-
-/*
-        label(class='flex')
-                    input(class="checkbox-square" type="checkbox" id='cs1')
-                    label(for='cs1') Можно курить
-*/
+.cbox{
+    margin-bottom: 10px;
+}

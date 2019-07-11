@@ -9,6 +9,11 @@
     margin-top: -0.8em;
 }
 
+.d_small{
+    width: 268px;
+    margin-top: 0.02em;
+}
+
 .dropdown_part{
     display: flex;
     justify-content: space-between;
