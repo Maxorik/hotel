@@ -25,3 +25,10 @@
     font-size: 14px;
     line-height: 50px;
 }
+
+.pagination_label{
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    color: rgba(31, 32, 65, 0.75);
+}

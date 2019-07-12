@@ -9,9 +9,35 @@ html
             include ../css/page3.css
     body
         include /components/header.pug
+        
         div(class='page3')
             div(class='left_panel')
                 include /components/filter_numbers.pug
-            div(class='numbers_collage')
+                
+            div(class='page3_main_part')
+                p(class='page3_h') Номера, которые мы для вас подобрали
+                div(class='numbers_collage')
+                    div(class='collage_row')
+                        div(class='fish1')
+                        div(class='fish1')
+                        div(class='fish1')
+                        
+                    div(class='collage_row')
+                        div(class='fish1')
+                        div(class='fish1')
+                        div(class='fish1')
+                        
+                    div(class='collage_row')
+                        div(class='fish1')
+                        div(class='fish1')
+                        div(class='fish1')
+                        
+                    div(class='collage_row')
+                        div(class='fish1')
+                        div(class='fish1')
+                        div(class='fish1')
+                    
+                    div(class='pagination_3')
+                        include /components/pagination.pug
 
         include /components/footer.pug

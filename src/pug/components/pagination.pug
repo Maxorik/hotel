@@ -1,18 +1,13 @@
-doctype html
-html
-    head
-        meta(charset = 'utf-8')
-        style 
-            include ../css/pagination.css
+style 
+    include ../../css/pagination.css
     
-    body
-        div(class='theblock')
-            div(class='bold_label') pagination
-                div(class='pagination')
-                    div(class='page_circle actived') 1
-                    div(class='page_circle') 2
-                    div(class='page_circle') 3
-                    div(class='page_circle') ...
-                    div(class='page_circle') 15
-                    div(class='page_circle page_arrow')
-                        include ../img/arrow_forward.svg
+div
+    div(class='pagination')
+        div(class='page_circle actived') 1
+        div(class='page_circle') 2
+        div(class='page_circle') 3
+        div(class='page_circle') ...
+        div(class='page_circle') 15
+        div(class='page_circle page_arrow')
+            include ../../img/arrow_forward.svg
+    p(class='pagination_label') 1 – 12 из 100+ вариантов аренды

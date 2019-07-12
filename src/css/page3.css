@@ -1,5 +1,8 @@
 .page3{
     display: flex;
+    box-shadow: -4px 21px 45px -48px #000000 inset;
+    padding-top: 30px;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
 }
 
 .left_panel{
@@ -8,12 +11,45 @@
     flex-direction: column;
 }
 
-.numbers_collage{
-    height: 100%;
-
-}
 
 .panel_element{
     margin-bottom: 20px;
     max-width: 270px;
+}
+
+.page3_main_part{
+    margin-left: 60px;
+    margin-right: 140px;
+}
+
+.page3_h{
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 20px;
+    color: #1F2041;
+}
+
+.collage_row{
+    display: flex;
+    font-size: 14px;
+}
+
+.fish1{
+    width:270px;
+    height:257px;
+    background-color:aliceblue;
+    margin-right: 1em;
+    margin-bottom: 20px;
+    box-shadow:0px 4px 8px 5px rgba(0,0,0,0.21);
+    -webkit-box-shadow:0px 4px 8px 5px rgba(0,0,0,0.21);
+    -moz-box-shadow:0px 4px 8px 5px rgba(0,0,0,0.21);
+}
+
+.pagination_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
 }
