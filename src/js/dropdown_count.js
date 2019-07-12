@@ -69,7 +69,12 @@ var dropdowns = document.getElementsByClassName('drop_for_script');
             var all_counts = dropdown_list.getElementsByClassName('c');
         
             if(dropdown_list.firstElementChild.firstElementChild.textContent == 'СПАЛЬНИ'){
-                let pl = all_counts[0].textContent + ' спальни ' + all_counts[1].textContent + ' кровати ' + all_counts[2].textContent + ' ванные комнаты';
+                if(dropdown_list.classList.contains('d_small')){
+                    var pl = all_counts[0].textContent + ' спальни, ' + all_counts[1].textContent + ' кровати' + '...';
+                }
+                else{
+                    var pl = all_counts[0].textContent + ' спальни, ' + all_counts[1].textContent + ' кровати, ' + all_counts[2].textContent + ' ванные комнаты';
+                }
                 input.value = pl;
             }
         
@@ -79,7 +84,7 @@ var dropdowns = document.getElementsByClassName('drop_for_script');
                 for(var i=0; i<all_counts.length; i++){
                     guest_sum = +guest_sum + +all_counts[i].textContent;
                 }
-                let pl = guest_sum + ' гостя';
+                let pl = guest_sum + ' гостей';
                 input.value = pl;
             }
         

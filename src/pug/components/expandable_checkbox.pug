@@ -1,39 +1,41 @@
-doctype html
-html
-    head
-        meta(charset = 'utf-8')
-        title webpack with pug
-        style 
-            include ../css/inputs.css
-            include ../css/font-awesome.min.css
-            include ../css/expandable_checkbox.css
+style
+    include ../../css/expandable_checkbox.css
     
-    body
-        div(class='theblock')
-            div(class='bold_label left') expandable checkbox list
-            span(class='checklist_arrow fa fa-chevron-down')
-            br
-            div(hidden)
-                label(class='flex')
-                    input(class="checkbox-square" type="checkbox" id='c1')
-                    label(for='c1') Завтрак
-                    
-                label(class='flex')
-                    input(class="checkbox-square" type="checkbox" id='c2' checked)
-                    label(for='c2') Письменный стол
-                    
-                label(class='flex')
-                    input(class="checkbox-square" type="checkbox" id='c3' checked)
-                    label(for='c3') Стул для кормления
-                    
-                label(class='flex')
-                    input(class="checkbox-square" type="checkbox" id='c4' checked)
-                    label(for='c4') Кроватка
+
+div(class='exp_checkbox')
+    div(class='bold_label left') дополнительные удобства
+    span(class='checklist_arrow fa fa-chevron-down')
+    br
+    div(hidden)
+        div(class='exp_checkbox')
+            label(class='flex e_check')
+                input(class="checkbox-square" type="checkbox" id='c1')
+                label(for='c1') Завтрак
+
+            label(class='e_check')
+                input(class="checkbox-square" type="checkbox" id='c2' checked)
+                label(for='c2') Письменный стол
+
+            label(class='e_check')
+                input(class="checkbox-square" type="checkbox" id='c3' checked)
+                label(for='c3') Стул для кормления
+
+            label(class='e_check')
+                input(class="checkbox-square" type="checkbox" id='c4' checked)
+                label(for='c4') Кроватка
+
+            label(class='e_check')
+                input(class="checkbox-square" type="checkbox" id='c5')
+                label(for='c5') Телевизор
+
+            label(class='e_check')
+                input(class="checkbox-square" type="checkbox" id='c6')
+                label(for='c6') Шампунь
                 
-                label(class='flex')
-                    input(class="checkbox-square" type="checkbox" id='c5')
-                    label(for='c5') Телевизор
-                    
-                label(class='flex')
-                    input(class="checkbox-square" type="checkbox" id='c6')
-                    label(for='c6') Шампунь
+            label(class='e_check')
+                input(class="checkbox-square" type="checkbox" id='c7')
+                label(for='c7') Холодильник
+                
+            label(class='e_check')
+                input(class="checkbox-square" type="checkbox" id='c8')
+                label(for='c8') Пол
