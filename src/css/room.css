@@ -1,0 +1,78 @@
+.fish1{
+    width:270px;
+    height:257px;
+    background-color:aliceblue;
+    margin-right: 1em;
+    margin-bottom: 20px;
+    box-shadow:0px 4px 8px 5px rgba(0,0,0,0.21);
+    -webkit-box-shadow:0px 4px 8px 5px rgba(0,0,0,0.21);
+    -moz-box-shadow:0px 4px 8px 5px rgba(0,0,0,0.21);
+}
+
+.norm_f{
+    background-color:transparent;
+    width:270px;  
+}
+
+.room_img_preview, .room_feedback{
+    width:270px;
+    height:150px;
+}
+
+.room_number{
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1F2041;
+    margin-right: 5px;
+}
+
+.room_lux{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #BC9CFF;
+    text-transform: uppercase;
+}
+
+.r_price, .r_label, .r_comm{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.r_label{
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.room_feedback{
+    max-width: 270px;
+    display: flex;
+    align-items: baseline;
+}
+
+.bord{
+    margin-left: 20px;
+    width: 230px;
+    border-top: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+.room_rate, .r_comm{
+    float: left;
+    align-items: baseline;
+}
+
+.room_parameters, .room_number_params, .room_price, .room_comments{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.room_parameters, .room_feedback{
+    padding: 0 10%;
+}

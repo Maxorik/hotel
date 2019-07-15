@@ -11,7 +11,6 @@
     flex-direction: column;
 }
 
-
 .panel_element{
     margin-bottom: 20px;
     max-width: 270px;
@@ -34,17 +33,6 @@
 .collage_row{
     display: flex;
     font-size: 14px;
-}
-
-.fish1{
-    width:270px;
-    height:257px;
-    background-color:aliceblue;
-    margin-right: 1em;
-    margin-bottom: 20px;
-    box-shadow:0px 4px 8px 5px rgba(0,0,0,0.21);
-    -webkit-box-shadow:0px 4px 8px 5px rgba(0,0,0,0.21);
-    -moz-box-shadow:0px 4px 8px 5px rgba(0,0,0,0.21);
 }
 
 .pagination_3{
