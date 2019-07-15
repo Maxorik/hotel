@@ -1,0 +1,19 @@
+
+mixin room_preview( data )
+    .room_mini
+        .room_img_preview
+            img(src= data.image)
+        .room_parameters
+            .room_number_params
+                .room_number= data.number
+                .room_lux= data.lux
+            .room_price
+                .r_price= data.price
+                .r_label в сутки
+        .bord
+        .room_feedback
+            .room_rate
+                include ../components/rate_stars.pug
+            .room_comments
+                .r_comm= data.comment
+                .r_label Отзывов

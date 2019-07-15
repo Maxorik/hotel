@@ -10,6 +10,7 @@ html
             include ../css/room.css
     body
         include /components/header.pug
+        include /mixin/room_mix.pug
         
         div(class='page3')
             div(class='left_panel')
@@ -19,45 +20,34 @@ html
                 p(class='page3_h') Номера, которые мы для вас подобрали
                 div(class='numbers_collage')
                     div(class='collage_row')
-                        div(class='fish1')
+                    
+                        +room_preview( {number: '№ 888', lux: 'люкс', price: '5200Р', comment: '70', image: '../assets/img/rooms/room1.jpg'} )
                         
-                        div(class='fish1 norm_f')
-                            div(class='room_img_preview')
-                                img(src=('assets/img/room1.jpg'))
-                            div(class='room_parameters')
-                                div(class='room_number_params')
-                                    p(class='room_number') № 888
-                                    p(class='room_lux') люкс
-                                div(class='room_price')
-                                    p(class="r_price") 9 990P
-                                    p(class='r_label') в сутки
-                                    
-                            div(class='bord')
-                            
-                            div(class='room_feedback')
-                                div(class='room_rate')
-                                    include /components/rate_stars.pug
-                                div(class='room_comments')
-                                    p(class="r_comm") 145
-                                    p(class='r_label') Отзывов
+                        +room_preview( {number: '№ 840', lux: '', price: '7900Р', comment: '4', image: '../assets/img/rooms/room2.jpg'} )
                                 
-                            
-                        div(class='fish1')
+                        +room_preview( {number: '№ 980', lux: 'люкс', price: '4900Р', comment: '32', image: '../assets/img/rooms/room3.jpg'} )
                         
                     div(class='collage_row')
-                        div(class='fish1')
-                        div(class='fish1')
-                        div(class='fish1')
+                        
+                        +room_preview( {number: '№ 856', lux: '', price: '2200Р', comment: '11', image: '../assets/img/rooms/room4.jpg'} )
+                        
+                        +room_preview( {number: '№ 740', lux: '', price: '7800Р', comment: '6', image: '../assets/img/rooms/room5.jpg'} )
+                        
+                        +room_preview( {number: '№ 982', lux: '', price: '3000Р', comment: '31', image: '../assets/img/rooms/room6.jpg'} )
                         
                     div(class='collage_row')
-                        div(class='fish1')
-                        div(class='fish1')
-                        div(class='fish1')
+                        +room_preview( {number: '№ 678', lux: '', price: '5100Р', comment: '90', image: '../assets/img/rooms/room7.jpg'} )
+                        
+                        +room_preview( {number: '№ 350', lux: '', price: '9500Р', comment: '43', image: '../assets/img/rooms/room8.jpg'} )
+                        
+                        +room_preview( {number: '№ 450', lux: '', price: '3900Р', comment: '3', image: '../assets/img/rooms/room9.jpg'} )
                         
                     div(class='collage_row')
-                        div(class='fish1')
-                        div(class='fish1')
-                        div(class='fish1')
+                        +room_preview( {number: '№ 666', lux: '', price: '3600Р', comment: '8', image: '../assets/img/rooms/room10.jpg'} )
+                        
+                        +room_preview( {number: '№ 444', lux: '', price: '6900Р', comment: '99', image: '../assets/img/rooms/room11.jpg'} )
+                        
+                        +room_preview( {number: '№ 352', lux: '', price: '4700Р', comment: '12', image: '../assets/img/rooms/room12.jpg'} )
                     
                     div(class='pagination_3')
                         include /components/pagination.pug
