@@ -1,8 +1,9 @@
-
+//img src="<%= require('../path-to/image.png') %>
 mixin room_preview( data )
     .room_mini
         .room_img_preview
             img(src= data.image)
+            //img(src="<%= require(data.image) %>")
         .room_parameters
             .room_number_params
                 .room_number= data.number
