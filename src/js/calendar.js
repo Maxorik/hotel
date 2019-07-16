@@ -7,6 +7,13 @@
     var thisday = +now.getDate();
     var beg_interval = 0;
     var end_interval = 0;
+
+    var b_mounth = thismounth + 1 + '';
+    var str_from =  beg_interval + '.' + b_mounth + '.' + thisyear;
+    var str_to =  end_interval + '.' + b_mounth + '.' + thisyear;
+    var str_from_int = beg_interval + ' ' + mounts_ru_prpad[+b_mounth - 1];
+    var str_to_int = end_interval + ' ' + mounts_ru_prpad[+b_mounth - 1];
+    
     const calendar_drop = document.getElementsByClassName('calendar_drop');
     const calendar_list = document.getElementsByClassName('calendar_list');
 
@@ -18,6 +25,30 @@
         calendar_list[i].addEventListener('click', cal_click, false);
     }
   
+    
+    /*****************************************************************/
+    window.onload = dateonload();
+
+    function dateonload(){
+        b_mounth = localStorage.getItem('b_mounth');
+        str_from =  localStorage.getItem('str_from');
+        str_to =  localStorage.getItem('str_to');
+        str_from_int = localStorage.getItem('str_from_int');
+        str_to_int = localStorage.getItem('str_to_int');
+
+        if(calendar_drop.length==1){
+            calendar_drop[0].previousElementSibling.value = str_from_int + ' - ' + str_to_int;
+        }
+            
+        else{
+            calendar_drop[0].previousElementSibling.value = str_from;
+            calendar_drop[1].previousElementSibling.value = str_to;
+        }
+        
+    };
+    /*****************************************************************/
+
+
     function drop_cal(event){
         let target = event.target;
         const cal_main = target.parentElement.parentElement.nextElementSibling;
@@ -213,7 +244,7 @@
 
     function approve_calendar(target){
         if(beg_interval!=0 && end_interval!=0){
-            var b_mounth = thismounth + 1 + '';
+            b_mounth = thismounth + 1 + '';
             if(beg_interval.length < 2){
                 beg_interval = '0' + beg_interval;
             }
@@ -223,18 +254,24 @@
             if(b_mounth.length < 2){
                 b_mounth = '0' + b_mounth;
             }
-            var str_from =  beg_interval + '.' + b_mounth + '.' + thisyear;
-            var str_to =  end_interval + '.' + b_mounth + '.' + thisyear;
+            str_from =  beg_interval + '.' + b_mounth + '.' + thisyear;
+            str_to =  end_interval + '.' + b_mounth + '.' + thisyear;
             
-            var str_from_int = beg_interval + ' ' + mounts_ru_prpad[+b_mounth - 1];
-            var str_from_to = end_interval + ' ' + mounts_ru_prpad[+b_mounth - 1];
+            str_from_int = beg_interval + ' ' + mounts_ru_prpad[+b_mounth - 1];
+            str_to_int = end_interval + ' ' + mounts_ru_prpad[+b_mounth - 1];
+            
+            localStorage.setItem('str_from',str_from);
+            localStorage.setItem('str_to',str_to);
+            localStorage.setItem('str_from_int',str_from_int);
+            localStorage.setItem('str_to_int',str_to_int);
+            localStorage.setItem('b_mounth',b_mounth);
         }
         reload_calendar(target);
         
         var dates_fields = target.parentElement.parentElement.parentElement.previousElementSibling;
         if(dates_fields.childNodes.length < 2){
             var input_date_interval = dates_fields.firstElementChild.childNodes[1];
-            input_date_interval.value = str_from_int + ' - ' + str_from_to;
+            input_date_interval.value = str_from_int + ' - ' + str_to_int;
             if(input_date_interval.value == 'undefined'){
                 input_date_interval.value = '';
             };

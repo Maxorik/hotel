@@ -56,15 +56,15 @@ module.exports = {
             test: /\.(png|jpg|svg|gif|PNG)$/,
             loader: 'file-loader',
             options: {
-            name: 'assets/img/[name].[ext]'
+                emitFile: true,
+                name: 'assets/img/[name].[ext]'
             }
-        }, 
                 
         {
             test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
             loader: 'file-loader',
             options: {
-            name: 'assets/fonts/[name].[ext]'
+                name: 'assets/fonts/[name].[ext]'
             }
         },
             {

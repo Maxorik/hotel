@@ -1,8 +1,33 @@
 var dropdowns = document.getElementsByClassName('drop_for_script');
+var drop_button = document.getElementsByClassName('drop_button');
     
     for(var i=0; i<dropdowns.length; i++){
         dropdowns[i].addEventListener('click', dropdownlist, false);
     }
+/************************************************************/
+ window.onload = guest_room_onload();
+
+    function guest_room_onload(){
+        console.log('guest_room_onload');
+        var guest_sum = localStorage.getItem('guest_sum');
+        var rooms_in_number = localStorage.getItem('rooms_in_number');
+        var rooms_in_number_small = localStorage.getItem('rooms_in_number_small');
+        
+        console.log('guest_sum ' + guest_sum);
+        console.log('rooms_in_number ' + rooms_in_number);
+        console.log('rooms_in_number_small ' + rooms_in_number_small);
+        
+        for(var i=0; i<drop_button.length; i++){
+            if(drop_button[i].classList.contains('room_i')){
+                drop_button[i].value = rooms_in_number;
+            }
+            
+            else{
+                drop_button[i].value = guest_sum;
+            }   
+        }
+    };
+/************************************************************/
     
     function dropdownlist(event){
         let target = event.target;
@@ -71,9 +96,13 @@ var dropdowns = document.getElementsByClassName('drop_for_script');
             if(dropdown_list.firstElementChild.firstElementChild.textContent == 'СПАЛЬНИ'){
                 if(dropdown_list.classList.contains('d_small')){
                     var pl = all_counts[0].textContent + ' спальни, ' + all_counts[1].textContent + ' кровати' + '...';
+                    localStorage.setItem('rooms_in_number_small',pl);
+                    localStorage.setItem('rooms_in_number',pl);
                 }
                 else{
                     var pl = all_counts[0].textContent + ' спальни, ' + all_counts[1].textContent + ' кровати, ' + all_counts[2].textContent + ' ванные комнаты';
+                    localStorage.setItem('rooms_in_number',pl);
+                    localStorage.setItem('rooms_in_number_small',pl);
                 }
                 input.value = pl;
             }
@@ -85,6 +114,7 @@ var dropdowns = document.getElementsByClassName('drop_for_script');
                     guest_sum = +guest_sum + +all_counts[i].textContent;
                 }
                 let pl = guest_sum + ' гостей';
+                localStorage.setItem('guest_sum',pl);
                 input.value = pl;
             }
         
