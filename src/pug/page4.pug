@@ -1,0 +1,36 @@
+doctype html
+html
+    head
+        meta(charset = 'utf-8')
+        title Hotel Grand Budapest
+        style
+            include ../css/main.css
+            include ../css/room_detail.css
+        
+        
+    body
+        include /components/header.pug
+        
+        .room_images
+            .room_img_big
+                img(src=('./assets/img/rooms/big/room1.jpg') width='100%' height='auto')
+            .room_img_middle
+                img(src=('./assets/img/rooms/middle/room1_1.jpg') class='room_image_middle')
+                img(src=('./assets/img/rooms/middle/room1_2.jpg') class='room_image_middle kostyl')
+                
+        .room_main_part
+            .room_advantage
+                .room_info
+                
+                .room_impression
+                
+            .room_user_comments
+            
+            .room_notice
+                .room_rules
+                
+                .room_cancel_info
+                
+        .room_bron_form
+            
+        include /components/footer.pug

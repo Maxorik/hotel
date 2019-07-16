@@ -1,9 +1,15 @@
-//img src="<%= require('../path-to/image.png') %>
+//img(src="<%= require(data.image) %>")
 mixin room_preview( data )
     .room_mini
         .room_img_preview
-            img(src= data.image)
-            //img(src="<%= require(data.image) %>")
+            a(href='page4.html' class='room_storage')
+                img(src= data.image) 
+            .room_slider
+                .fa.fa-circle
+                .fa.fa-circle-o
+                .fa.fa-circle-o
+                .fa.fa-circle-o
+            
         .room_parameters
             .room_number_params
                 .room_number= data.number

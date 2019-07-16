@@ -8,14 +8,10 @@ var drop_button = document.getElementsByClassName('drop_button');
  window.onload = guest_room_onload();
 
     function guest_room_onload(){
-        console.log('guest_room_onload');
         var guest_sum = localStorage.getItem('guest_sum');
         var rooms_in_number = localStorage.getItem('rooms_in_number');
         var rooms_in_number_small = localStorage.getItem('rooms_in_number_small');
-        
-        console.log('guest_sum ' + guest_sum);
-        console.log('rooms_in_number ' + rooms_in_number);
-        console.log('rooms_in_number_small ' + rooms_in_number_small);
+       
         
         for(var i=0; i<drop_button.length; i++){
             if(drop_button[i].classList.contains('room_i')){

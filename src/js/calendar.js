@@ -40,7 +40,7 @@
             calendar_drop[0].previousElementSibling.value = str_from_int + ' - ' + str_to_int;
         }
             
-        else{
+        else if(calendar_drop.length==2){
             calendar_drop[0].previousElementSibling.value = str_from;
             calendar_drop[1].previousElementSibling.value = str_to;
         }

@@ -1,0 +1,25 @@
+.room_images{
+    display: flex;
+    width:100%;
+}
+
+.room_img_big{
+    width:68%;
+    height:auto;
+}
+
+.room_img_middle{
+    width:32%;
+    height:auto;
+}
+
+.room_image_middle{
+    width:100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.kostyl{
+    margin-top: -1.55%;
+}

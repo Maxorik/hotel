@@ -16,6 +16,7 @@
 .room_img_preview, .room_feedback{
     width:270px;
     height:150px;
+    position: relative;
 }
 
 .room_number{
@@ -79,4 +80,20 @@
 
 .room_parameters, .room_feedback{
     padding: 0 10%;
+}
+
+.room_slider{
+    position: absolute;
+    display: flex;
+    /*color: #fff;*/
+    right:0;
+    margin-right: 15px;
+    margin-top: -25px;
+}
+
+.fa-circle, .fa-circle-o{
+    margin-right: 3px;
+    font-size: 7.5px;
+    color:#fff;
+    
 }
