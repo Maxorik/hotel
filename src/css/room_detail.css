@@ -23,3 +23,29 @@
 .kostyl{
     margin-top: -1.55%;
 }
+
+.room_detail_maintext{
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    margin:0;
+    padding:0;
+}
+
+.room_detail_labeltext{
+    font-family: Montserrat;
+    font-size: 14px;
+    color: rgba(31, 32, 65, 0.75);
+    font-weight: bold;
+    line-height: 22px;
+    margin:0;
+    padding:0;
+}
+
+.room_detail_h_text{
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 19px;
+    color:#1F2041;
+}

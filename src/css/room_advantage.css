@@ -1,0 +1,28 @@
+.room_advantage{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 70px;
+}
+
+.room_info_icon{
+    float: left;
+}
+
+.room_info_mix{
+    padding: 1em 0;
+    
+}
+
+.room_advantage_mix{
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+.room_info .room_advantage_mix:last-of-type{
+    border-bottom: none;
+}
+
+.room_detail_text{
+    margin-left: 50px;
+}
