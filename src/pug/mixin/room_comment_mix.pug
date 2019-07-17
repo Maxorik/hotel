@@ -1,0 +1,8 @@
+mixin room_comment( data )
+    .room_comment_userphoto
+        img(width='44px' height='44px' src= data.face) 
+    .room_detail_labeltext= data.username
+    .room_detail_maintext= data.comment_date
+    .room_comments_feedback
+        include ../components/like.pug
+        .room_detail_maintext= data.comment_text

@@ -1,0 +1,35 @@
+.room_comments{
+    margin-left: 10%;
+    width: 55%;
+}
+
+.room_comment_block{
+    margin-bottom: 20px;
+}
+
+.room_comments_num{
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.room_comments_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.room_comment_userphoto{
+    float:left;
+    margin-right: 10px;
+}
+
+.room_comments_feedback{
+    margin-top: 1em;
+    display: flex;
+    align-items: baseline;
+}
+
+.room_comment_likes{
+    width:44px;
+    border: 1px solid red;
+    margin-right: 10px;
+}

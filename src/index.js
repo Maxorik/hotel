@@ -8,4 +8,5 @@ function scripts_require(){
     require('./js/ratestars.js');
     require('./js/storage_number.js');
     require('./js/room_detail_onload.js');
+    require('./js/like.js');
 }
