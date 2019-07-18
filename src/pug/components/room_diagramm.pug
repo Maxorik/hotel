@@ -1,0 +1,42 @@
+style
+    include ../../css/room_diagramm.css
+body
+    div(class='room_impression')
+        p(class='room_detail_h_text') Впечатления от номера
+            
+        div(class='room_diagramm')
+            svg(width='140', height='140' class='room_svg' viewBox="0 0 39 39")
+                lineargradient#linear-gradient-yellow(gradientTransform='rotate(62, 250, 150)')
+                    stop(offset='0%', stop-color='#FFE39C')
+                    stop(offset='100%', stop-color='#FFBA9C')
+                lineargradient#linear-gradient-green(gradientTransform='rotate(0, 250, 150)')
+                    stop(offset='0%', stop-color='#66D2EA')
+                    stop(offset='100%', stop-color='#6FCF97')
+                lineargradient#linear-gradient-purple(gradientTransform='rotate(62, 250, 150)')
+                    stop(offset='0%', stop-color='#BC9CFF')
+                    stop(offset='100%', stop-color='#8BA4F9')
+                circle.yellow(stroke='url(#linear-gradient-yellow)', width='100%', height='100%', r='15.91549430918954', cx='21', cy='21')
+                circle.green(stroke='url(#linear-gradient-green)', width='100%', height='100%', r='15.91549430918954', cx='21', cy='21')
+                circle.purple(stroke='url(#linear-gradient-purple)', width='100%', height='100%', r='15.91549430918954', cx='21', cy='21')
+        
+        
+            div(class='room_diagramm_circle')
+                p(class='room_diagramm_text diag_num') 260
+                p(class='room_diagramm_text') голосов
+                    
+            div(class='room_diagramm_list')
+                div(class='room_diagramm_ul')
+                    div(class='room_diagramm_ul_color grad_yellow')
+                    div(class='room_detail_maintext') Великолепно
+                        
+                div(class='room_diagramm_ul')
+                    div(class='room_diagramm_ul_color grad_green')
+                    div(class='room_detail_maintext') Хорошо
+                        
+                div(class='room_diagramm_ul')
+                    div(class='room_diagramm_ul_color grad_purple')
+                    div(class='room_detail_maintext') Удовлетворительно
+                        
+                div(class='room_diagramm_ul')
+                    div(class='room_diagramm_ul_color grad_black')
+                    div(class='room_detail_maintext') Разочарован

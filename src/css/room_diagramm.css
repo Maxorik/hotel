@@ -3,20 +3,22 @@
 }
 
 .room_diagramm{
+    position: relative;
     display: flex;
     align-items: flex-end;
 }
 
 .room_diagramm_circle{
-    width:120px;
-    height:120px;
-    border: 4px solid #FFE39C;
+    position: absolute;
+    top:20%;
+    left:8%;
+    width:100px;
+    height:100px;
     border-radius: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .room_diagramm_text{
@@ -46,6 +48,24 @@
     border-radius: 100%;
     line-height: 24px;
     margin: 5px;
+}
+
+.yellow {
+    fill: #fff;
+    stroke-width: 4;
+}
+
+.purple{
+    fill: #fff;
+    stroke-dasharray: 64 120;
+    stroke-width: 4;
+    stroke-dashoffset: -75
+}
+
+.green{
+    fill: #fff;
+    stroke-dasharray: 25 189;
+    stroke-width: 4;
 }
 
 .grad_yellow{

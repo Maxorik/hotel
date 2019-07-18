@@ -18,16 +18,14 @@ html
                 img(src=('./assets/img/rooms/middle/room1_1.jpg') class='room_image_middle')
                 img(src=('./assets/img/rooms/middle/room1_2.jpg') class='room_image_middle kostyl')
                 
-        .room_main_part
-            include /components/room_advantage.pug
+        div(class='room_main_part')
+            div(class='room_main_part_feedback')
+                include /components/room_advantage.pug
                 
-            .room_user_comments
+                include /components/room_comments.pug
             
-            .room_notice
-                .room_rules
+                include /components/room_rules.pug
                 
-                .room_cancel_info
-                
-        .room_bron_form
+            include /components/form_room_bron.pug
             
         include /components/footer.pug

@@ -1,7 +1,5 @@
 .room_advantage{
     display: flex;
-    margin-left: 10%;
-    margin-top: 70px;
 }
 
 .room_info_icon{
@@ -10,7 +8,10 @@
 
 .room_info_mix{
     padding: 1em 0;
-    
+}
+
+.room_mixes{
+    margin-top: -1em;
 }
 
 .room_advantage_mix{
@@ -21,6 +22,10 @@
 
 .room_info .room_advantage_mix:last-of-type{
     border-bottom: none;
+}
+
+.room_info{
+    margin-bottom: 30px;
 }
 
 .room_detail_text{

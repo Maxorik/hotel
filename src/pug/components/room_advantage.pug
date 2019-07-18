@@ -1,8 +1,6 @@
 style 
     include ../../css/room_detail.css
     include ../../css/room_advantage.css
-    include ../../css/room_impression.css
-    include ../../css/room_comments.css
 body
     include ../mixin/room_advantage_mix.pug
     include ../mixin/room_comment_mix.pug
@@ -10,51 +8,15 @@ body
     div(class='room_advantage')
         div(class='room_info')
             p(class='room_detail_h_text') Сведения о номере
+            div(class='room_mixes')  
+                div(class='room_advantage_mix')
+                    +room_advantage( { labeltext: 'Комфорт', maintext: 'Шумопоглощающие стены', adv_svg:'assets/img/insert_emoticon.svg' })
                 
-            div(class='room_advantage_mix')
-                +room_advantage( { labeltext: 'Комфорт', maintext: 'Шумопоглощающие стены', adv_svg:'assets/img/insert_emoticon.svg' })
+                div(class='room_advantage_mix')
+                    +room_advantage( { labeltext: 'Удобство', maintext: 'Окно в каждой из спален', adv_svg:'assets/img/location_city.svg' })  
                 
-            div(class='room_advantage_mix')
-                +room_advantage( { labeltext: 'Удобство', maintext: 'Окно в каждой из спален', adv_svg:'assets/img/location_city.svg' })  
-                
-            div(class='room_advantage_mix')
-                +room_advantage( { labeltext: 'Уют', maintext: 'Номер оснащён камином', adv_svg:'assets/img/whatshot.svg' })
+                div(class='room_advantage_mix')
+                    +room_advantage( { labeltext: 'Уют', maintext: 'Номер оснащён камином', adv_svg:'assets/img/whatshot.svg' })
                 
 
-        div(class='room_impression')
-            p(class='room_detail_h_text') Впечатления от номера
-            
-            div(class='room_diagramm')
-                div(class='room_diagramm_circle')
-                    p(class='room_diagramm_text diag_num') 260
-                    p(class='room_diagramm_text') голосов
-                    
-                div(class='room_diagramm_list')
-                    div(class='room_diagramm_ul')
-                        div(class='room_diagramm_ul_color grad_yellow')
-                        div(class='room_detail_maintext') Великолепно
-                        
-                    div(class='room_diagramm_ul')
-                        div(class='room_diagramm_ul_color grad_green')
-                        div(class='room_detail_maintext') Хорошо
-                        
-                    div(class='room_diagramm_ul')
-                        div(class='room_diagramm_ul_color grad_purple')
-                        div(class='room_detail_maintext') Удовлетворительно
-                        
-                    div(class='room_diagramm_ul')
-                        div(class='room_diagramm_ul_color grad_black')
-                        div(class='room_detail_maintext') Разочарован
-                        
-    div(class='room_comments')
-        div(class='room_comments_header')
-            p(class='room_detail_h_text') Отзывы посетителей номера
-            p(class='room_detail_maintext room_comments_num') 2 отзыва
-            
-        div(class='room_comment_block')
-            +room_comment( { username: 'Антон Сарафанов', comment_date: '5 дней назад', comment_text:'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.', face:'assets/img/users/face1.png' })
-            
-        div(class='room_comment_block')
-            +room_comment( { username: 'Патрисия Стёклышкова', comment_date: 'Неделю назад', comment_text:'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент', face:'assets/img/users/face2.png' })
-            
-        
+        include /room_diagramm.pug

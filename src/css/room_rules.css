@@ -1,0 +1,13 @@
+.room_rules{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.room_rules>div{
+    width:47%;
+}
+
+.room_rules_h{
+    margin-top: 20px;
+}
