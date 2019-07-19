@@ -26,6 +26,7 @@
 
 .room_main_part{
     display:flex;
+    align-items: flex-start;
     justify-content: space-between;
     margin: 70px 10%;
 }

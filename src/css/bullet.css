@@ -2,6 +2,11 @@
 	display: none;
 }
 
+.bullet-check_block{
+    display: flex;
+    align-items: baseline;
+}
+
 .bullet-check__checkbox-custom {
 	position: relative;
 	width: 12px;             
@@ -17,7 +22,7 @@
     font-size: 14px;
     font-family: Montserrat;
     font-weight: normal;
-    max-width: 270px;
+    max-width: 75%;
 }
 
 .bullet-check__checkbox-custom,

@@ -1,4 +1,49 @@
 style
     include ../../css/forms.css
+    include ../../css/buttons.css
+    include ../../css/form_bron.css
 body
     .form_bron
+        .form_bron_label
+            .room_number_params
+                .room_number №888
+                .room_lux ЛЮКС
+            .room_price
+                .r_price 9999Р
+                .r_label в сутки
+                
+        .form_bron_block        
+            include /calendar.pug
+            
+        .form_bron_block
+            include /dropdown_guests.pug
+            
+        .form_bron_block
+            .price_calculation
+                .bron_sum_calculation_money 9990₽
+                p(class='bron_sum_x') x
+                .bron_sum_calculation_days 4 суток
+            .bron_sum_result 40000₽
+            
+        .form_bron_block
+            .bron_sum_calculation
+                .bron_sum_calculation_discount Сбор за услуги: скидка 2 179₽
+                div(class='bron_sum_circle_i') i
+            .bron_sum_result 0₽
+            
+        .form_bron_block
+            .bron_sum_calculation
+                .bron_sum_calculation_discount Сбор за дополнительные услуги
+                .bron_sum_circle_i i
+            .bron_sum_result 300₽
+            
+        .form_bron_sum_total
+            p Итого
+            .total_border
+            .total_price 38 081₽
+            
+        div(class='main_button btn_active')
+            span забронировать
+            div(class='btn_arrow')
+                include ../../img/arrow_forward.svg
+        
