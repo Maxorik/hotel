@@ -2,7 +2,7 @@ style
     include ../../css/forms.css
     include ../../css/inputs.css
     include ../../css/buttons.css
-div(class='form_main form_reg')
+form(class='form_main form_reg' id='_form_reg')
     p(class='form_h') Регистрация аккаунта
     
     input(class='input big' placeholder='Имя')
@@ -22,11 +22,10 @@ div(class='form_main form_reg')
         
     include toggle.pug
     
-    a(href='/page2.html')
-        div(class='main_button btn_active')
-            span перейти к оплате
-            div(class='btn_arrow')
-                include ../../img/arrow_forward.svg
+    div(class='main_button btn_active btn_login')
+        span перейти к оплате
+        div(class='btn_arrow')
+            include ../../img/arrow_forward.svg
         
     div(class='enter_block')
         p(class='btn_label') Уже есть аккаунт на Toxin
