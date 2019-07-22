@@ -8,7 +8,9 @@
 
 .c_small{
     width:268px;
+    margin-top: -1px;
 }
+
 
 .calendar_mounth{
     font-family: Quicksand;
@@ -26,7 +28,7 @@
 
 .calendar_table{
     border-spacing:0;
-    margin-left: 18px;
+    margin: 0 5%;
 }
 
 .calendar_arrow{
@@ -144,4 +146,9 @@
     width:39px;
     height:38px;
     margin-top: -37px;
+}
+
+.fix_marg{
+    margin-top: -11px;
+    padding: 0;
 }
