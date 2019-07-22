@@ -1,5 +1,9 @@
-.form_reg, .form_enter{
+.form_reg{
     display: none;
+}
+
+.form_enter{
+    display: flex;
 }
 
 .form_main{

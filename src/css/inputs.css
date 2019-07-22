@@ -82,8 +82,6 @@
     margin-right: 20px;
 }
 
-/*
-div(class='theblock')
-input(class='input big' placeholder='Спальни, Кровати, Ванные комнаты')
-span(class='abs fa fa-chevron-down')
-*/
+.input_empty{
+    border: 1px solid red;
+}

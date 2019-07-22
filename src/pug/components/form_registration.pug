@@ -22,10 +22,11 @@ div(class='form_main form_reg')
         
     include toggle.pug
     
-    div(class='main_button btn_active')
-        span перейти к оплате
-        div(class='btn_arrow')
-            include ../../img/arrow_forward.svg
+    a(href='/page2.html')
+        div(class='main_button btn_active')
+            span перейти к оплате
+            div(class='btn_arrow')
+                include ../../img/arrow_forward.svg
         
     div(class='enter_block')
         p(class='btn_label') Уже есть аккаунт на Toxin
