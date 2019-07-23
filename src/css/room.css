@@ -85,7 +85,6 @@
 .room_slider{
     position: absolute;
     display: flex;
-    /*color: #fff;*/
     right:0;
     margin-right: 15px;
     margin-top: -25px;

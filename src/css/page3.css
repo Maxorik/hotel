@@ -2,7 +2,6 @@
     display: flex;
     box-shadow: -4px 21px 45px -48px #000000 inset;
     padding-top: 30px;
-    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
 }
 
 .left_panel{
@@ -18,7 +17,6 @@
 
 .page3_main_part{
     margin-left: 40px;
-    /*margin-right: 100px;*/
 }
 
 .page3_h{
@@ -40,4 +38,8 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 70px;
+}
+
+.inp_arrow{
+    margin-top: 11px;
 }

@@ -8,8 +8,14 @@ var btn_login = document.getElementsByClassName('btn_login');
 const _form_enter = document.getElementById('_form_enter');
 const _form_reg = document.getElementById('_form_reg');
 
-_form_enter.querySelector('.btn_login').addEventListener('click', form_confirm, false);
-_form_reg.querySelector('.btn_login').addEventListener('click', form_confirm, false);
+if(_form_enter){
+    _form_enter.querySelector('.btn_login').addEventListener('click', form_confirm, false);
+}
+
+if(_form_reg){
+    _form_reg.querySelector('.btn_login').addEventListener('click', form_confirm, false);
+}
+
 
 for(var i=0; i<btn_reg.length; i++){
     btn_reg[i].addEventListener('click', show_reg, false);
