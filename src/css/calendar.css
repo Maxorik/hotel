@@ -90,7 +90,7 @@
 
 .calendar_drop::before{
     position: absolute;
-    /*left: 0px;*/
+    right: -2em;
 }
 
 .arr_small::before{

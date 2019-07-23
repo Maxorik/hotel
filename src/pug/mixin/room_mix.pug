@@ -20,7 +20,13 @@ mixin room_preview( data )
         .bord
         .room_feedback
             .room_rate
-                include ../components/rate_stars.pug
+                 div(class='flex stars')
+                    span(class='fa fa-star')
+                    span(class='fa fa-star')
+                    span(class='fa fa-star')
+                    span(class='fa fa-star')
+                    span(class='fa fa-star-o')
+                    span(class='fa fa-star' style='display:none')
             .room_comments
                 .r_comm= data.comment
                 .r_label Отзывов
